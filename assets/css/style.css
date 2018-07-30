@@ -1,0 +1,41 @@
+.respond{
+		border-style:solid;
+		border-color:transparent;
+		border-radius: 5px 5px 5px 5px;
+		background-color: #2863c4;
+		box-sizing: border-box;
+		color:white;
+	
+	}
+	
+	.respond:hover
+	{ cursor:pointer;
+		background-color:#336ed0;
+	}
+	.respond:active
+	{
+		cursor:pointer;
+background-color:#2858a7;
+	}
+
+
+	.responsed{
+		border-style:solid;
+		border-color:transparent;
+		border-radius: 5px 5px 5px 5px;
+		background-color: #26a432;
+		box-sizing: border-box;
+		color:white;
+	
+	}
+	
+	.responsed:hover
+	{ cursor:pointer;
+		background-color:#44ab4e;
+	}
+	.responsed:active
+	{
+		cursor:pointer;
+background-color:#348a3c;
+	}
+	
