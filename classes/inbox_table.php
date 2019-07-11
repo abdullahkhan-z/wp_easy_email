@@ -20,6 +20,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 }
 
 
+
 add_action('init', 'do_output_buffer');
 function do_output_buffer() 
 {
@@ -37,6 +38,7 @@ function style_script()
 
 class Easy_Email_Inbox extends WP_List_Table {
 
+	static $filter="";
 
 	public function __construct() {
 
@@ -55,22 +57,70 @@ class Easy_Email_Inbox extends WP_List_Table {
 
 	public static function get_emails($per_page = 10, $page_number = 10 ) {
 
+		$data_to_fetch="subject,responded,previous_box,name,id,email_to,email_from,content,box,added,time,status,NOW() as cdate";
 		global $wpdb;
+		$filter="";
 		$box="";
 		if ($_REQUEST['page']=="easy_inbox")
-		$box="where box='inbox'";
+		$box="and box='inbox'";
 		else if  ($_REQUEST['page']=="easy_sent")
-		$box="where box='sent'";
+		$box="and box='sent'";
 
 		else if ($_REQUEST['page']=="easy_draft")
-		$box="where box='draft'";
+		$box="and box='draft'";
 
 		else if ($_REQUEST['page']=="easy_deleted")
-		$box="where box='deleted'";
+		$box="and box='deleted'";
 
-		if(!isset($_REQUEST['s']))
-		{$sql = "SELECT * FROM {$wpdb->prefix}easy_inbox ".$box;
-	  
+
+			if (!empty($_REQUEST['start_date']) && !empty($_REQUEST['end_date']))
+			{
+				$start_date=esc_sql($_REQUEST['start_date']);
+				$end_date=esc_sql($_REQUEST['end_date']);
+				$filter.=" and time between '".$start_date." 00:00:00' and '".$end_date." 23:59:59'";
+			}
+			if(!empty($_REQUEST['subject']))
+			{
+				$subject=esc_sql($_REQUEST['subject']);
+				$filter.=" and subject LIKE '".$subject."'";
+			}
+
+			if(!empty($_REQUEST['content']))
+			{
+				$content=esc_sql($_REQUEST['content']);
+				$filter.=" and content LIKE '".$content."'";
+			}
+
+			if(!empty($_REQUEST['email_from']))
+			{
+				$email_from=esc_sql($_REQUEST['email_from']);
+				$filter.=" and email_from='".$email_from."'";
+			}
+
+			if(!empty($_REQUEST['email_from_name']))
+			{
+				$email_from_name=esc_sql($_REQUEST['email_from_name']);
+				$filter.=" and name='".$email_from_name."'";
+			}
+
+
+			if(!empty($_REQUEST['email_to']))
+			{
+				$email_to=esc_sql($_REQUEST['email_to']);
+				$filter.=" and email_to='".$email_to."'";
+			}
+
+			if((!empty($_REQUEST['responded']) || $_REQUEST['responded']==0) && $_REQUEST['responded']!="")
+			{
+				$responded=esc_sql($_REQUEST['responded']);
+				$filter.=" and responded=".$responded;
+			}
+
+		self::$filter=$filter;
+			
+		if(empty($_REQUEST['s']))
+		{$sql = "SELECT ".$data_to_fetch." FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id()." ".$box." ".$filter;
+
 		if ( ! empty( $_REQUEST['orderby'] ) ) {
 		  $sql .= ' ORDER BY ' . esc_sql( $_REQUEST['orderby'] );
 		  $sql .= ! empty( $_REQUEST['order'] ) ? ' ' . esc_sql( $_REQUEST['order'] ) : "DESC";
@@ -83,11 +133,11 @@ class Easy_Email_Inbox extends WP_List_Table {
 
 		else
 		{ 	if($box=="")
-				$box="where";
+				$box="and";
 				else 
 				$box=$box." and";
-			$sql = "SELECT * FROM {$wpdb->prefix}easy_inbox ".$box." name like '%".$_REQUEST['s']."%' or subject like '%".$_REQUEST['s']."%' or content like '%".$_REQUEST['s']."%' or email_from like '%".$_REQUEST['s']."%'";
-	  
+			$sql = "SELECT ".$data_to_fetch." FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id()." ".$box."( name like '%".$_REQUEST['s']."%' or subject like '%".$_REQUEST['s']."%' or content like '%".$_REQUEST['s']."%' or email_from like '%".$_REQUEST['s']."%')";
+		
 		if ( ! empty( $_REQUEST['orderby'] ) ) {
 		  $sql .= ' ORDER BY ' . esc_sql( $_REQUEST['orderby'] );
 		  $sql .= ! empty( $_REQUEST['order'] ) ? ' ' . esc_sql( $_REQUEST['order'] ) : "DESC";
@@ -101,13 +151,44 @@ class Easy_Email_Inbox extends WP_List_Table {
 		$sql .= " LIMIT $per_page";
 	  
 		$sql .= ' OFFSET ' . ( $page_number - 1 ) * $per_page;
-	  
-	  
+		
+
+		error_log(print_r($sql,true));
 		$result = $wpdb->get_results( $sql, 'ARRAY_A' );
+
 		return $result;
 	  }
 
+	  public static function delete_all($class)
+	  {		
+		  global $wpdb;
+		  $tablename = $wpdb->prefix . "easy_inbox";
+			
+			if($class=="all_emails")
+			{	
+				$sql = "DELETE FROM $tablename";
+			}
+			else if($class=="easy_inbox")
+			{	
+				$sql = "DELETE FROM  $tablename WHERE box='inbox'";
+			}
+			else if($class=="easy_sent")
+			{
+				$sql = "DELETE FROM   $tablename WHERE box='sent'";
+			}
+			else if($class=="easy_draft")
+			{		error_log('asdas');
+				$sql = "DELETE FROM   $tablename WHERE box='draft'";
+			}
+			else if($class=="easy_deleted")
+			{
+				$sql = "DELETE FROM   $tablename WHERE box='deleted'";
+			}
 
+
+			$wpdb->query($sql);
+			
+	  }
 	  public static function delete_email( $id,$class ) {
 		global $wpdb;
 		$tablename = $wpdb->prefix . "easy_inbox";
@@ -136,19 +217,25 @@ class Easy_Email_Inbox extends WP_List_Table {
 		
 		$box="";
 		if ($_REQUEST['page']=="easy_inbox")
-		$box="where box='inbox'";
+		$box="and box='inbox'";
 		else if  ($_REQUEST['page']=="easy_sent")
-		$box="where box='sent'";
+		$box="and box='sent'";
 
 		else if ($_REQUEST['page']=="easy_draft")
-		$box="where box='draft'";
+		$box="and box='draft'";
 
 		else if ($_REQUEST['page']=="easy_deleted")
-		$box="where box='deleted'";
-		
-		$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox ".$box;
+		$box="and box='deleted'";
+		if(!empty($_REQUEST['s']))
+		{
+			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id()." ".$box." and ( name like '%".$_REQUEST['s']."%' or subject like '%".$_REQUEST['s']."%' or content like '%".$_REQUEST['s']."%' or email_from like '%".$_REQUEST['s']."%')";
+		}
+		else
+		{
+			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id()." ".$box." ".$filter;
+		}
 	  
-		return $wpdb->get_var( $sql );
+		return $wpdb->get_var($sql);
 	  }
 	
 
@@ -165,9 +252,9 @@ class Easy_Email_Inbox extends WP_List_Table {
 		public function count_boxes($box)
 		{	global $wpdb;
 			if($box=="" || $box==null)
-			$sql="SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox";
+			$sql="SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id();
 			else
-			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox where box='".$box."'";
+			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}easy_inbox where user_id=".get_current_user_id()." and box='".$box."'";
 			return $wpdb->get_var( $sql );
 		}
 
@@ -179,8 +266,14 @@ class Easy_Email_Inbox extends WP_List_Table {
 			
 			//date('j M ', $date);
 			//$title = '' . date('m/d/Y H:i:s',$item['time'] ). '';
-			$date = date('j M Y',$item['time'] );
-			$elapsed=time_elapsed_string("@".$item['time']);
+			$timestamp = strtotime($item['time']);
+			$timestamp2 = strtotime($item['cdate']);
+
+			$date = date('j M Y',$timestamp );
+			if($item['previous_box']=="inbox")
+			$elapsed=get_friendly_time_ago($timestamp,time());
+			else
+			$elapsed=get_friendly_time_ago($timestamp,$timestamp2);
 			$title="<p style='font-style:italic'>".$date."</p><small style='font-style:italic'>".$elapsed."</small>";
 			return $title. $this->row_actions( $actions );
 			}
@@ -192,7 +285,7 @@ class Easy_Email_Inbox extends WP_List_Table {
 		
 			$string=$item['content'];
 			$length=20;
-			$title = mb_strimwidth(wp_strip_all_tags($item['content']), 0,100, '...');
+			$title = mb_strimwidth(wp_strip_all_tags($item['content']), 0,80, '...');
 			
 
 			return $title . $this->row_actions( $actions );
@@ -204,10 +297,11 @@ class Easy_Email_Inbox extends WP_List_Table {
 
 				$responded=$item['responded'];
 				if($responded==0)
-				$title ="<p><a href='' style='text-decoration:none;'><button class='respond'>Respond</button></a><p>";
+				$title ="<p><a class='respond' href='admin.php?page=new_email&easy_action=respond&id=".$item['id']."' style='text-decoration:none;'>Respond</a><p>";
+				else if($responded==1)
+				$title ="<p><a class='responsed' href='admin.php?page=new_email&easy_action=responded&id=".$item['id']."' style='text-decoration:none;'>Responded</a><p>";
 				else
-				$title ="<p><a href='' style='text-decoration:none;'><button class='responsed'>Responded</button></a><p>";
-				
+				$title ="<p><a style='text-decoration:none;'>-</a><p>";
 	
 				return $title;
 				}
@@ -225,37 +319,76 @@ class Easy_Email_Inbox extends WP_List_Table {
 					}
 	
 		
+		function column_email_to($item)
+		{	
+			$email_to=$item['email_to'];
+			if($email_to=="" || $email_to==null)
+				$email_to="-";
+			$email_to=mb_strimwidth(wp_strip_all_tags($email_to), 0,80, '...');
+			$title  ="<small style='font-style:italic'>".$email_to."<small>";
+					
+		
+			return $title . $this->row_actions( $actions );
+		}
+		
 		function column_subject($item)
 		{
+			$new=false;
+			$testedTime = strtotime($item['time']);
+			$currentTime = time();
+
+			if(($currentTime - $testedTime <= 3600 ) && $item['status']==0)
+				$new=true;
 
 			$delete_nonce = wp_create_nonce( 'delete_email' );
 			$send_back_nonce=wp_create_nonce('send_back');
+			
 						$img="";
-						if($item['box']=="inbox")
-						$img="<img width=20 height=20  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/inbox.png' alt='' />";
 
-						else if($item['box']=="sent")
-						$img="<img width=15 height=15  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/sent.png' alt='' />";
+						if($new && $_REQUEST['page']=="easy_inbox")
+							$img="<img width=20 height=25  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/new.svg' alt='' />";
 
-						else if($item['box']=="deleted")
-						$img="<img width=15 height=15  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/deleted.png' alt='' />";
- 
-						else if($item['box']=="draft")
-						$img="<img width=25 height=25  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/draft.png' alt='' />";
- 
+						if($_REQUEST['page']=="all_emails")
+						{
+							if($item['box']=="inbox")
+							$img="<img width=20 height=20  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/inbox.png' alt='' />";
+
+							else if($item['box']=="sent")
+							$img="<img width=15 height=15  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/sent.png' alt='' />";
+
+							else if($item['box']=="deleted")
+							$img="<img width=15 height=15  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/deleted.png' alt='' />";
+	
+							else if($item['box']=="draft")
+							$img="<img width=25 height=25  style='display:inline;' src='".plugin_dir_url( __FILE__ )."../assets/images/draft.png' alt='' />";
+						}
 						
-
-						$title = "<a href='' style='text-decoration:none;'><span style='display:inline; font-weight:bold; color:#2c7c93'>".mb_strimwidth(wp_strip_all_tags($item['subject']), 0,50, '...')."</span> <span style='margin-top0px; margin-bottom:0px;'>".$img."</span></a>";
+						$subject=wp_strip_all_tags($item['subject']);
+						if($subject==null || $subject=="")
+							$subject="No Subject";
+						$subject=stripslashes($subject);
+						
+						$title = "<a href='admin.php?page=new_email&box=".$item['box']."&easy_action=open&id=".$item['id']."' style='text-decoration:none;'><span style='display:inline; font-weight:bold; color:#2c7c93'>".mb_strimwidth($subject, 0,50, '...')."</span> <span style='margin-top0px; margin-bottom:0px;'>".$img."</span></a>";
 						if($item['box']=="deleted")
-						$actions = [
-							'delete' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&class=%s">Delete</a>',esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['id'] ), $delete_nonce,$item['box'] ),
+						{$actions = [
+							'delete' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&class=%s">Delete Permanently</a>',esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['id'] ), $delete_nonce,$item['box'] ),
 							'sendback' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&previous_class=%s">Send Back</a>',esc_attr( $_REQUEST['page'] ), 'sendback', absint( $item['id'] ), $send_back_nonce,$item['previous_box'] ),
 						];
-						
-						else
+					}
+					 else	if($item['box']=='draft')
+					{		$title = "<a href='admin.php?page=new_email&easy_action=edit&id=".$item['id']."' style='text-decoration:none;'><span style='display:inline; font-weight:bold; color:#2c7c93'>".mb_strimwidth(wp_strip_all_tags($subject), 0,50, '...')."</span> <span style='margin-top0px; margin-bottom:0px;'>".$img."</span></a>";
+
 						$actions = [
-							'delete' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&class=%s">Delete</a>',esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['id'] ), $delete_nonce,$item['box'] )];
-		
+							'delete' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&class=%s">Delete</a>',esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['id'] ), $delete_nonce,$item['box'] ),
+							'edit' => sprintf( '<a href="admin.php?page=new_email&easy_action=edit&id=%s"  >Edit</a>',esc_attr(absint( $item['id'] ) )),
+							
+						];}
+						else
+					{	$actions = [
+							'delete' => sprintf( '<a href="?&page=%s&action=%s&id=%s&_wpnonce=%s&class=%s">Delete</a>',esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['id'] ), $delete_nonce,$item['box'] ),
+							'forward' => sprintf( '<a href="admin.php?page=new_email&easy_action=forward&id=%s"  >Forward</a>',esc_attr(absint( $item['id'] ) )),
+						];
+					}
 					return $title . $this->row_actions( $actions );
 
 		}
@@ -273,7 +406,8 @@ class Easy_Email_Inbox extends WP_List_Table {
 		$columns = [
 			'cb'      => '<input type="checkbox" />',
 			'subject'    => __( 'Subject', 'easy_email' ),
-		  'email_from' => __( 'Email From', 'easy_email' ),
+			'email_from' => __( 'Email From', 'easy_email' ),
+			'email_to' => __('Email To','easy_email'),
 			'content'	=> __( 'Content', 'easy_email' ),
 			'time' =>__( 'Time', 'easy_email' ),
 			'responded'=>__( 'Action', 'easy_email' )
@@ -288,7 +422,9 @@ class Easy_Email_Inbox extends WP_List_Table {
 		$sortable_columns = array(
 			'subject' =>array( 'name', true ),
 		  'name' => array( 'name', true ),
-		  'email_from' => array( 'email_from', false ),
+			'email_from' => array( 'email_from', false ),
+			'email_to' => array( 'email_to', false ),
+			'content' => array( 'content', false ),
 		  'time' => array( 'time', false ),
 		  'responded'=>array('responded',true)
 		);
@@ -312,7 +448,43 @@ class Easy_Email_Inbox extends WP_List_Table {
 		];
 	}
 		return $actions;
-	  }
+		}
+		
+		public function display_tablenav( $which ) {
+			?>
+			<div class="tablenav <?php echo esc_attr( $which ); ?>">
+				
+					<div class="alignleft actions">
+							<?php $this->bulk_actions( $which ); ?>
+					</div>
+
+					<div class="alignleft actions">
+							<?php $this->extra_tablenav( $which ); ?>
+					</div>
+					
+					<?php
+					
+					$this->pagination( $which );
+					?>
+					<br class="clear" />
+			</div>
+			<?php
+	}
+
+	public function extra_tablenav( $which )
+	{
+		$delete_all=wp_create_nonce('delete_all');
+		if(!wp_verify_nonce( $delete_all, 'delete_all' ))
+		{
+			die("error....");
+		}
+			?>
+				<button  class="myBtn button action" type='button'>Filters</button>
+				<?php
+				
+				echo sprintf( '<a style="display:inline; padding:5px;  background-color:crimson; color:white;" class="btn btn-danger button action" href="?&page=%s&action=%s&_wpnonce=%s&class=%s">Delete All Permanently</a>',esc_attr( $_REQUEST['page'] ), 'delete_all', $delete_all,$_REQUEST['page'] );
+
+	}
 
 		function get_views() { 
 			$status_links = array(
@@ -330,6 +502,7 @@ class Easy_Email_Inbox extends WP_List_Table {
 	  public function prepare_items() {
 
 		$this->_column_headers = $this->get_column_info();
+
 	  $customvar = ( isset($_REQUEST['customvar']) ? $_REQUEST['customvar'] : 'all');
 
 		/** Process bulk action */
@@ -363,6 +536,23 @@ class Easy_Email_Inbox extends WP_List_Table {
 	  public function process_bulk_action() {
 
 		//Detect when a bulk action is being triggered...
+
+		if ( 'delete_all' === $this->current_action() ) {
+	  
+			// In our file that handles the request, verify the nonce.
+			$nonce = esc_attr( $_REQUEST['_wpnonce'] );
+		
+			if ( ! wp_verify_nonce( $nonce, 'delete_all' ) ) {
+			  die( 'Error While Deleting....' );
+			}
+			else {
+
+				self::delete_all($_GET['class']);
+			}
+		
+		  }
+
+
 		if ( 'delete' === $this->current_action() ) {
 	  
 		  // In our file that handles the request, verify the nonce.
@@ -450,32 +640,38 @@ class Easy_Email_Inbox extends WP_List_Table {
 }
 
 
-function time_elapsed_string($datetime, $full = false) {
-	$now = new DateTime;
-	$ago = new DateTime($datetime);
-	$diff = $now->diff($ago);
+function get_friendly_time_ago($distant_timestamp,$current_timestamp, $max_units = 3) {
+	$i = 0;
+	$time = $current_timestamp- $distant_timestamp; 
+	$tokens = [
+			31536000 => 'year',
+			2592000 => 'month',
+			604800 => 'week',
+			86400 => 'day',
+			3600 => 'hour',
+			60 => 'minute',
+			1 => 'second'
+	];
 
-	$diff->w = floor($diff->d / 7);
-	$diff->d -= $diff->w * 7;
+	$responses = [];
+	while ($i < $max_units && $time > 0) {
+			foreach ($tokens as $unit => $text) {
+					if ($time < $unit) {
+							continue;
+					}
+					$i++;
+					$numberOfUnits = floor($time / $unit);
 
-	$string = array(
-			'y' => 'year',
-			'm' => 'month',
-			'w' => 'week',
-			'd' => 'day',
-			'h' => 'hour',
-			'i' => 'minute',
-			's' => 'second',
-	);
-	foreach ($string as $k => &$v) {
-			if ($diff->$k) {
-					$v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
-			} else {
-					unset($string[$k]);
+					$responses[] = $numberOfUnits . ' ' . $text . (($numberOfUnits > 1) ? 's' : '');
+					$time -= ($unit * $numberOfUnits);
+					break;
 			}
 	}
 
-	if (!$full) $string = array_slice($string, 0, 1);
-	return $string ? implode(', ', $string) . ' ago' : 'just now';
+	if (!empty($responses)) {
+			return implode(', ', $responses) . ' ago';
+	}
+
+	return 'Just now';
 }
 ?>

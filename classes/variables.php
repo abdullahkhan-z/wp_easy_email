@@ -14,6 +14,7 @@
  * @link http://google.com
  **/
 
+require_once ABSPATH . 'wp-load.php';
 
 $userid="";
 
@@ -30,6 +31,45 @@ $orderid="";
 $orderstatus="";
 
 $ordertotal="";
+
+
+class VARIABLES {
+	public $script="";
+
+	public function __construct() {
+		
+		
+			add_shortcode('first_name', function($atts) {
+			   return 'www.google1.com/asdfsd';
+			}
+
+			add_shortcode('last_name', function($atts) {
+			   return 'www.google1.com/fdfff';
+			}
+
+			add_shortcode('last_name', function($atts) {
+				return 'www.google1.com/fdfff';
+			 }
+
+			add_shortcode('last_name', function($atts) {
+				return 'www.google1.com/fdfff';
+			 }
+
+			add_shortcode('last_name', function($atts) {
+				return 'www.google1.com/fdfff';
+			 }
+			
+			add_shortcode('last_name', function($atts) {
+				return 'www.google1.com/fdfff';
+			 }
+			
+			add_shortcode('last_name', function($atts) {
+				return 'www.google1.com/fdfff';
+			 }
+	}
+}
+
+
 
 
 ?>

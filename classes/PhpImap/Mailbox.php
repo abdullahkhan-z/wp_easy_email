@@ -35,6 +35,7 @@ class Mailbox {
 		$this->imapLogin = $login;
 		$this->imapPassword = $password;
 		$this->serverEncoding = strtoupper($serverEncoding);
+		$this->setTimeouts(120);
 		if($attachmentsDir) {
 			if(!is_dir($attachmentsDir)) {
 				die('Directory "' . $attachmentsDir . '" not found');

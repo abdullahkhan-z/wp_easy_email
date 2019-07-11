@@ -1,0 +1,6809 @@
+.wp-easy-email {
+  /*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+  /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+}
+.wp-easy-email html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.wp-easy-email body {
+  margin: 0;
+}
+.wp-easy-email article,
+.wp-easy-email aside,
+.wp-easy-email details,
+.wp-easy-email figcaption,
+.wp-easy-email figure,
+.wp-easy-email footer,
+.wp-easy-email header,
+.wp-easy-email hgroup,
+.wp-easy-email main,
+.wp-easy-email menu,
+.wp-easy-email nav,
+.wp-easy-email section,
+.wp-easy-email summary {
+  display: block;
+}
+.wp-easy-email audio,
+.wp-easy-email canvas,
+.wp-easy-email progress,
+.wp-easy-email video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.wp-easy-email audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.wp-easy-email [hidden],
+.wp-easy-email template {
+  display: none;
+}
+.wp-easy-email a {
+  background-color: transparent;
+}
+.wp-easy-email a:active,
+.wp-easy-email a:hover {
+  outline: 0;
+}
+.wp-easy-email abbr[title] {
+  border-bottom: 1px dotted;
+}
+.wp-easy-email b,
+.wp-easy-email strong {
+  font-weight: bold;
+}
+.wp-easy-email dfn {
+  font-style: italic;
+}
+.wp-easy-email h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.wp-easy-email mark {
+  background: #ff0;
+  color: #000;
+}
+.wp-easy-email small {
+  font-size: 80%;
+}
+.wp-easy-email sub,
+.wp-easy-email sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.wp-easy-email sup {
+  top: -0.5em;
+}
+.wp-easy-email sub {
+  bottom: -0.25em;
+}
+.wp-easy-email img {
+  border: 0;
+}
+.wp-easy-email svg:not(:root) {
+  overflow: hidden;
+}
+.wp-easy-email figure {
+  margin: 1em 40px;
+}
+.wp-easy-email hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.wp-easy-email pre {
+  overflow: auto;
+}
+.wp-easy-email code,
+.wp-easy-email kbd,
+.wp-easy-email pre,
+.wp-easy-email samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.wp-easy-email button,
+.wp-easy-email input,
+.wp-easy-email optgroup,
+.wp-easy-email select,
+.wp-easy-email textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.wp-easy-email button {
+  overflow: visible;
+}
+.wp-easy-email button,
+.wp-easy-email select {
+  text-transform: none;
+}
+.wp-easy-email button,
+.wp-easy-email html input[type="button"],
+.wp-easy-email input[type="reset"],
+.wp-easy-email input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.wp-easy-email button[disabled],
+.wp-easy-email html input[disabled] {
+  cursor: default;
+}
+.wp-easy-email button::-moz-focus-inner,
+.wp-easy-email input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.wp-easy-email input {
+  line-height: normal;
+}
+.wp-easy-email input[type="checkbox"],
+.wp-easy-email input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.wp-easy-email input[type="number"]::-webkit-inner-spin-button,
+.wp-easy-email input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.wp-easy-email input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+.wp-easy-email input[type="search"]::-webkit-search-cancel-button,
+.wp-easy-email input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.wp-easy-email fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.wp-easy-email legend {
+  border: 0;
+  padding: 0;
+}
+.wp-easy-email textarea {
+  overflow: auto;
+}
+.wp-easy-email optgroup {
+  font-weight: bold;
+}
+.wp-easy-email table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wp-easy-email td,
+.wp-easy-email th {
+  padding: 0;
+}
+@media print {
+  .wp-easy-email *,
+  .wp-easy-email *:before,
+  .wp-easy-email *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  .wp-easy-email a,
+  .wp-easy-email a:visited {
+    text-decoration: underline;
+  }
+  .wp-easy-email a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  .wp-easy-email abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .wp-easy-email a[href^="#"]:after,
+  .wp-easy-email a[href^="javascript:"]:after {
+    content: "";
+  }
+  .wp-easy-email pre,
+  .wp-easy-email blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  .wp-easy-email thead {
+    display: table-header-group;
+  }
+  .wp-easy-email tr,
+  .wp-easy-email img {
+    page-break-inside: avoid;
+  }
+  .wp-easy-email img {
+    max-width: 100% !important;
+  }
+  .wp-easy-email p,
+  .wp-easy-email h2,
+  .wp-easy-email h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  .wp-easy-email h2,
+  .wp-easy-email h3 {
+    page-break-after: avoid;
+  }
+  .wp-easy-email .navbar {
+    display: none;
+  }
+  .wp-easy-email .btn > .caret,
+  .wp-easy-email .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+  .wp-easy-email .label {
+    border: 1px solid #000;
+  }
+  .wp-easy-email .table {
+    border-collapse: collapse !important;
+  }
+  .wp-easy-email .table td,
+  .wp-easy-email .table th {
+    background-color: #fff !important;
+  }
+  .wp-easy-email .table-bordered th,
+  .wp-easy-email .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.wp-easy-email .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wp-easy-email .glyphicon-asterisk:before {
+  content: "\002a";
+}
+.wp-easy-email .glyphicon-plus:before {
+  content: "\002b";
+}
+.wp-easy-email .glyphicon-euro:before,
+.wp-easy-email .glyphicon-eur:before {
+  content: "\20ac";
+}
+.wp-easy-email .glyphicon-minus:before {
+  content: "\2212";
+}
+.wp-easy-email .glyphicon-cloud:before {
+  content: "\2601";
+}
+.wp-easy-email .glyphicon-envelope:before {
+  content: "\2709";
+}
+.wp-easy-email .glyphicon-pencil:before {
+  content: "\270f";
+}
+.wp-easy-email .glyphicon-glass:before {
+  content: "\e001";
+}
+.wp-easy-email .glyphicon-music:before {
+  content: "\e002";
+}
+.wp-easy-email .glyphicon-search:before {
+  content: "\e003";
+}
+.wp-easy-email .glyphicon-heart:before {
+  content: "\e005";
+}
+.wp-easy-email .glyphicon-star:before {
+  content: "\e006";
+}
+.wp-easy-email .glyphicon-star-empty:before {
+  content: "\e007";
+}
+.wp-easy-email .glyphicon-user:before {
+  content: "\e008";
+}
+.wp-easy-email .glyphicon-film:before {
+  content: "\e009";
+}
+.wp-easy-email .glyphicon-th-large:before {
+  content: "\e010";
+}
+.wp-easy-email .glyphicon-th:before {
+  content: "\e011";
+}
+.wp-easy-email .glyphicon-th-list:before {
+  content: "\e012";
+}
+.wp-easy-email .glyphicon-ok:before {
+  content: "\e013";
+}
+.wp-easy-email .glyphicon-remove:before {
+  content: "\e014";
+}
+.wp-easy-email .glyphicon-zoom-in:before {
+  content: "\e015";
+}
+.wp-easy-email .glyphicon-zoom-out:before {
+  content: "\e016";
+}
+.wp-easy-email .glyphicon-off:before {
+  content: "\e017";
+}
+.wp-easy-email .glyphicon-signal:before {
+  content: "\e018";
+}
+.wp-easy-email .glyphicon-cog:before {
+  content: "\e019";
+}
+.wp-easy-email .glyphicon-trash:before {
+  content: "\e020";
+}
+.wp-easy-email .glyphicon-home:before {
+  content: "\e021";
+}
+.wp-easy-email .glyphicon-file:before {
+  content: "\e022";
+}
+.wp-easy-email .glyphicon-time:before {
+  content: "\e023";
+}
+.wp-easy-email .glyphicon-road:before {
+  content: "\e024";
+}
+.wp-easy-email .glyphicon-download-alt:before {
+  content: "\e025";
+}
+.wp-easy-email .glyphicon-download:before {
+  content: "\e026";
+}
+.wp-easy-email .glyphicon-upload:before {
+  content: "\e027";
+}
+.wp-easy-email .glyphicon-inbox:before {
+  content: "\e028";
+}
+.wp-easy-email .glyphicon-play-circle:before {
+  content: "\e029";
+}
+.wp-easy-email .glyphicon-repeat:before {
+  content: "\e030";
+}
+.wp-easy-email .glyphicon-refresh:before {
+  content: "\e031";
+}
+.wp-easy-email .glyphicon-list-alt:before {
+  content: "\e032";
+}
+.wp-easy-email .glyphicon-lock:before {
+  content: "\e033";
+}
+.wp-easy-email .glyphicon-flag:before {
+  content: "\e034";
+}
+.wp-easy-email .glyphicon-headphones:before {
+  content: "\e035";
+}
+.wp-easy-email .glyphicon-volume-off:before {
+  content: "\e036";
+}
+.wp-easy-email .glyphicon-volume-down:before {
+  content: "\e037";
+}
+.wp-easy-email .glyphicon-volume-up:before {
+  content: "\e038";
+}
+.wp-easy-email .glyphicon-qrcode:before {
+  content: "\e039";
+}
+.wp-easy-email .glyphicon-barcode:before {
+  content: "\e040";
+}
+.wp-easy-email .glyphicon-tag:before {
+  content: "\e041";
+}
+.wp-easy-email .glyphicon-tags:before {
+  content: "\e042";
+}
+.wp-easy-email .glyphicon-book:before {
+  content: "\e043";
+}
+.wp-easy-email .glyphicon-bookmark:before {
+  content: "\e044";
+}
+.wp-easy-email .glyphicon-print:before {
+  content: "\e045";
+}
+.wp-easy-email .glyphicon-camera:before {
+  content: "\e046";
+}
+.wp-easy-email .glyphicon-font:before {
+  content: "\e047";
+}
+.wp-easy-email .glyphicon-bold:before {
+  content: "\e048";
+}
+.wp-easy-email .glyphicon-italic:before {
+  content: "\e049";
+}
+.wp-easy-email .glyphicon-text-height:before {
+  content: "\e050";
+}
+.wp-easy-email .glyphicon-text-width:before {
+  content: "\e051";
+}
+.wp-easy-email .glyphicon-align-left:before {
+  content: "\e052";
+}
+.wp-easy-email .glyphicon-align-center:before {
+  content: "\e053";
+}
+.wp-easy-email .glyphicon-align-right:before {
+  content: "\e054";
+}
+.wp-easy-email .glyphicon-align-justify:before {
+  content: "\e055";
+}
+.wp-easy-email .glyphicon-list:before {
+  content: "\e056";
+}
+.wp-easy-email .glyphicon-indent-left:before {
+  content: "\e057";
+}
+.wp-easy-email .glyphicon-indent-right:before {
+  content: "\e058";
+}
+.wp-easy-email .glyphicon-facetime-video:before {
+  content: "\e059";
+}
+.wp-easy-email .glyphicon-picture:before {
+  content: "\e060";
+}
+.wp-easy-email .glyphicon-map-marker:before {
+  content: "\e062";
+}
+.wp-easy-email .glyphicon-adjust:before {
+  content: "\e063";
+}
+.wp-easy-email .glyphicon-tint:before {
+  content: "\e064";
+}
+.wp-easy-email .glyphicon-edit:before {
+  content: "\e065";
+}
+.wp-easy-email .glyphicon-share:before {
+  content: "\e066";
+}
+.wp-easy-email .glyphicon-check:before {
+  content: "\e067";
+}
+.wp-easy-email .glyphicon-move:before {
+  content: "\e068";
+}
+.wp-easy-email .glyphicon-step-backward:before {
+  content: "\e069";
+}
+.wp-easy-email .glyphicon-fast-backward:before {
+  content: "\e070";
+}
+.wp-easy-email .glyphicon-backward:before {
+  content: "\e071";
+}
+.wp-easy-email .glyphicon-play:before {
+  content: "\e072";
+}
+.wp-easy-email .glyphicon-pause:before {
+  content: "\e073";
+}
+.wp-easy-email .glyphicon-stop:before {
+  content: "\e074";
+}
+.wp-easy-email .glyphicon-forward:before {
+  content: "\e075";
+}
+.wp-easy-email .glyphicon-fast-forward:before {
+  content: "\e076";
+}
+.wp-easy-email .glyphicon-step-forward:before {
+  content: "\e077";
+}
+.wp-easy-email .glyphicon-eject:before {
+  content: "\e078";
+}
+.wp-easy-email .glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.wp-easy-email .glyphicon-chevron-right:before {
+  content: "\e080";
+}
+.wp-easy-email .glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.wp-easy-email .glyphicon-minus-sign:before {
+  content: "\e082";
+}
+.wp-easy-email .glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.wp-easy-email .glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.wp-easy-email .glyphicon-question-sign:before {
+  content: "\e085";
+}
+.wp-easy-email .glyphicon-info-sign:before {
+  content: "\e086";
+}
+.wp-easy-email .glyphicon-screenshot:before {
+  content: "\e087";
+}
+.wp-easy-email .glyphicon-remove-circle:before {
+  content: "\e088";
+}
+.wp-easy-email .glyphicon-ok-circle:before {
+  content: "\e089";
+}
+.wp-easy-email .glyphicon-ban-circle:before {
+  content: "\e090";
+}
+.wp-easy-email .glyphicon-arrow-left:before {
+  content: "\e091";
+}
+.wp-easy-email .glyphicon-arrow-right:before {
+  content: "\e092";
+}
+.wp-easy-email .glyphicon-arrow-up:before {
+  content: "\e093";
+}
+.wp-easy-email .glyphicon-arrow-down:before {
+  content: "\e094";
+}
+.wp-easy-email .glyphicon-share-alt:before {
+  content: "\e095";
+}
+.wp-easy-email .glyphicon-resize-full:before {
+  content: "\e096";
+}
+.wp-easy-email .glyphicon-resize-small:before {
+  content: "\e097";
+}
+.wp-easy-email .glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+.wp-easy-email .glyphicon-gift:before {
+  content: "\e102";
+}
+.wp-easy-email .glyphicon-leaf:before {
+  content: "\e103";
+}
+.wp-easy-email .glyphicon-fire:before {
+  content: "\e104";
+}
+.wp-easy-email .glyphicon-eye-open:before {
+  content: "\e105";
+}
+.wp-easy-email .glyphicon-eye-close:before {
+  content: "\e106";
+}
+.wp-easy-email .glyphicon-warning-sign:before {
+  content: "\e107";
+}
+.wp-easy-email .glyphicon-plane:before {
+  content: "\e108";
+}
+.wp-easy-email .glyphicon-calendar:before {
+  content: "\e109";
+}
+.wp-easy-email .glyphicon-random:before {
+  content: "\e110";
+}
+.wp-easy-email .glyphicon-comment:before {
+  content: "\e111";
+}
+.wp-easy-email .glyphicon-magnet:before {
+  content: "\e112";
+}
+.wp-easy-email .glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.wp-easy-email .glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.wp-easy-email .glyphicon-retweet:before {
+  content: "\e115";
+}
+.wp-easy-email .glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+.wp-easy-email .glyphicon-folder-close:before {
+  content: "\e117";
+}
+.wp-easy-email .glyphicon-folder-open:before {
+  content: "\e118";
+}
+.wp-easy-email .glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+.wp-easy-email .glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+.wp-easy-email .glyphicon-hdd:before {
+  content: "\e121";
+}
+.wp-easy-email .glyphicon-bullhorn:before {
+  content: "\e122";
+}
+.wp-easy-email .glyphicon-bell:before {
+  content: "\e123";
+}
+.wp-easy-email .glyphicon-certificate:before {
+  content: "\e124";
+}
+.wp-easy-email .glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+.wp-easy-email .glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+.wp-easy-email .glyphicon-hand-right:before {
+  content: "\e127";
+}
+.wp-easy-email .glyphicon-hand-left:before {
+  content: "\e128";
+}
+.wp-easy-email .glyphicon-hand-up:before {
+  content: "\e129";
+}
+.wp-easy-email .glyphicon-hand-down:before {
+  content: "\e130";
+}
+.wp-easy-email .glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+.wp-easy-email .glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+.wp-easy-email .glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+.wp-easy-email .glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+.wp-easy-email .glyphicon-globe:before {
+  content: "\e135";
+}
+.wp-easy-email .glyphicon-wrench:before {
+  content: "\e136";
+}
+.wp-easy-email .glyphicon-tasks:before {
+  content: "\e137";
+}
+.wp-easy-email .glyphicon-filter:before {
+  content: "\e138";
+}
+.wp-easy-email .glyphicon-briefcase:before {
+  content: "\e139";
+}
+.wp-easy-email .glyphicon-fullscreen:before {
+  content: "\e140";
+}
+.wp-easy-email .glyphicon-dashboard:before {
+  content: "\e141";
+}
+.wp-easy-email .glyphicon-paperclip:before {
+  content: "\e142";
+}
+.wp-easy-email .glyphicon-heart-empty:before {
+  content: "\e143";
+}
+.wp-easy-email .glyphicon-link:before {
+  content: "\e144";
+}
+.wp-easy-email .glyphicon-phone:before {
+  content: "\e145";
+}
+.wp-easy-email .glyphicon-pushpin:before {
+  content: "\e146";
+}
+.wp-easy-email .glyphicon-usd:before {
+  content: "\e148";
+}
+.wp-easy-email .glyphicon-gbp:before {
+  content: "\e149";
+}
+.wp-easy-email .glyphicon-sort:before {
+  content: "\e150";
+}
+.wp-easy-email .glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+.wp-easy-email .glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+.wp-easy-email .glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+.wp-easy-email .glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+.wp-easy-email .glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+.wp-easy-email .glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+.wp-easy-email .glyphicon-unchecked:before {
+  content: "\e157";
+}
+.wp-easy-email .glyphicon-expand:before {
+  content: "\e158";
+}
+.wp-easy-email .glyphicon-collapse-down:before {
+  content: "\e159";
+}
+.wp-easy-email .glyphicon-collapse-up:before {
+  content: "\e160";
+}
+.wp-easy-email .glyphicon-log-in:before {
+  content: "\e161";
+}
+.wp-easy-email .glyphicon-flash:before {
+  content: "\e162";
+}
+.wp-easy-email .glyphicon-log-out:before {
+  content: "\e163";
+}
+.wp-easy-email .glyphicon-new-window:before {
+  content: "\e164";
+}
+.wp-easy-email .glyphicon-record:before {
+  content: "\e165";
+}
+.wp-easy-email .glyphicon-save:before {
+  content: "\e166";
+}
+.wp-easy-email .glyphicon-open:before {
+  content: "\e167";
+}
+.wp-easy-email .glyphicon-saved:before {
+  content: "\e168";
+}
+.wp-easy-email .glyphicon-import:before {
+  content: "\e169";
+}
+.wp-easy-email .glyphicon-export:before {
+  content: "\e170";
+}
+.wp-easy-email .glyphicon-send:before {
+  content: "\e171";
+}
+.wp-easy-email .glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+.wp-easy-email .glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+.wp-easy-email .glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+.wp-easy-email .glyphicon-floppy-save:before {
+  content: "\e175";
+}
+.wp-easy-email .glyphicon-floppy-open:before {
+  content: "\e176";
+}
+.wp-easy-email .glyphicon-credit-card:before {
+  content: "\e177";
+}
+.wp-easy-email .glyphicon-transfer:before {
+  content: "\e178";
+}
+.wp-easy-email .glyphicon-cutlery:before {
+  content: "\e179";
+}
+.wp-easy-email .glyphicon-header:before {
+  content: "\e180";
+}
+.wp-easy-email .glyphicon-compressed:before {
+  content: "\e181";
+}
+.wp-easy-email .glyphicon-earphone:before {
+  content: "\e182";
+}
+.wp-easy-email .glyphicon-phone-alt:before {
+  content: "\e183";
+}
+.wp-easy-email .glyphicon-tower:before {
+  content: "\e184";
+}
+.wp-easy-email .glyphicon-stats:before {
+  content: "\e185";
+}
+.wp-easy-email .glyphicon-sd-video:before {
+  content: "\e186";
+}
+.wp-easy-email .glyphicon-hd-video:before {
+  content: "\e187";
+}
+.wp-easy-email .glyphicon-subtitles:before {
+  content: "\e188";
+}
+.wp-easy-email .glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+.wp-easy-email .glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+.wp-easy-email .glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+.wp-easy-email .glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+.wp-easy-email .glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+.wp-easy-email .glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+.wp-easy-email .glyphicon-registration-mark:before {
+  content: "\e195";
+}
+.wp-easy-email .glyphicon-cloud-download:before {
+  content: "\e197";
+}
+.wp-easy-email .glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+.wp-easy-email .glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+.wp-easy-email .glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+.wp-easy-email .glyphicon-cd:before {
+  content: "\e201";
+}
+.wp-easy-email .glyphicon-save-file:before {
+  content: "\e202";
+}
+.wp-easy-email .glyphicon-open-file:before {
+  content: "\e203";
+}
+.wp-easy-email .glyphicon-level-up:before {
+  content: "\e204";
+}
+.wp-easy-email .glyphicon-copy:before {
+  content: "\e205";
+}
+.wp-easy-email .glyphicon-paste:before {
+  content: "\e206";
+}
+.wp-easy-email .glyphicon-alert:before {
+  content: "\e209";
+}
+.wp-easy-email .glyphicon-equalizer:before {
+  content: "\e210";
+}
+.wp-easy-email .glyphicon-king:before {
+  content: "\e211";
+}
+.wp-easy-email .glyphicon-queen:before {
+  content: "\e212";
+}
+.wp-easy-email .glyphicon-pawn:before {
+  content: "\e213";
+}
+.wp-easy-email .glyphicon-bishop:before {
+  content: "\e214";
+}
+.wp-easy-email .glyphicon-knight:before {
+  content: "\e215";
+}
+.wp-easy-email .glyphicon-baby-formula:before {
+  content: "\e216";
+}
+.wp-easy-email .glyphicon-tent:before {
+  content: "\26fa";
+}
+.wp-easy-email .glyphicon-blackboard:before {
+  content: "\e218";
+}
+.wp-easy-email .glyphicon-bed:before {
+  content: "\e219";
+}
+.wp-easy-email .glyphicon-apple:before {
+  content: "\f8ff";
+}
+.wp-easy-email .glyphicon-erase:before {
+  content: "\e221";
+}
+.wp-easy-email .glyphicon-hourglass:before {
+  content: "\231b";
+}
+.wp-easy-email .glyphicon-lamp:before {
+  content: "\e223";
+}
+.wp-easy-email .glyphicon-duplicate:before {
+  content: "\e224";
+}
+.wp-easy-email .glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+.wp-easy-email .glyphicon-scissors:before {
+  content: "\e226";
+}
+.wp-easy-email .glyphicon-bitcoin:before {
+  content: "\e227";
+}
+.wp-easy-email .glyphicon-btc:before {
+  content: "\e227";
+}
+.wp-easy-email .glyphicon-xbt:before {
+  content: "\e227";
+}
+.wp-easy-email .glyphicon-yen:before {
+  content: "\00a5";
+}
+.wp-easy-email .glyphicon-jpy:before {
+  content: "\00a5";
+}
+.wp-easy-email .glyphicon-ruble:before {
+  content: "\20bd";
+}
+.wp-easy-email .glyphicon-rub:before {
+  content: "\20bd";
+}
+.wp-easy-email .glyphicon-scale:before {
+  content: "\e230";
+}
+.wp-easy-email .glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+.wp-easy-email .glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+.wp-easy-email .glyphicon-education:before {
+  content: "\e233";
+}
+.wp-easy-email .glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+.wp-easy-email .glyphicon-option-vertical:before {
+  content: "\e235";
+}
+.wp-easy-email .glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+.wp-easy-email .glyphicon-modal-window:before {
+  content: "\e237";
+}
+.wp-easy-email .glyphicon-oil:before {
+  content: "\e238";
+}
+.wp-easy-email .glyphicon-grain:before {
+  content: "\e239";
+}
+.wp-easy-email .glyphicon-sunglasses:before {
+  content: "\e240";
+}
+.wp-easy-email .glyphicon-text-size:before {
+  content: "\e241";
+}
+.wp-easy-email .glyphicon-text-color:before {
+  content: "\e242";
+}
+.wp-easy-email .glyphicon-text-background:before {
+  content: "\e243";
+}
+.wp-easy-email .glyphicon-object-align-top:before {
+  content: "\e244";
+}
+.wp-easy-email .glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+.wp-easy-email .glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+.wp-easy-email .glyphicon-object-align-left:before {
+  content: "\e247";
+}
+.wp-easy-email .glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+.wp-easy-email .glyphicon-object-align-right:before {
+  content: "\e249";
+}
+.wp-easy-email .glyphicon-triangle-right:before {
+  content: "\e250";
+}
+.wp-easy-email .glyphicon-triangle-left:before {
+  content: "\e251";
+}
+.wp-easy-email .glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+.wp-easy-email .glyphicon-triangle-top:before {
+  content: "\e253";
+}
+.wp-easy-email .glyphicon-console:before {
+  content: "\e254";
+}
+.wp-easy-email .glyphicon-superscript:before {
+  content: "\e255";
+}
+.wp-easy-email .glyphicon-subscript:before {
+  content: "\e256";
+}
+.wp-easy-email .glyphicon-menu-left:before {
+  content: "\e257";
+}
+.wp-easy-email .glyphicon-menu-right:before {
+  content: "\e258";
+}
+.wp-easy-email .glyphicon-menu-down:before {
+  content: "\e259";
+}
+.wp-easy-email .glyphicon-menu-up:before {
+  content: "\e260";
+}
+.wp-easy-email * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wp-easy-email *:before,
+.wp-easy-email *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wp-easy-email html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wp-easy-email body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #fff;
+}
+.wp-easy-email input,
+.wp-easy-email button,
+.wp-easy-email select,
+.wp-easy-email textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.wp-easy-email a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.wp-easy-email a:hover,
+.wp-easy-email a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+.wp-easy-email a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.wp-easy-email figure {
+  margin: 0;
+}
+.wp-easy-email img {
+  vertical-align: middle;
+}
+.wp-easy-email .img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wp-easy-email .img-rounded {
+  border-radius: 6px;
+}
+.wp-easy-email .img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.wp-easy-email .img-circle {
+  border-radius: 50%;
+}
+.wp-easy-email hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.wp-easy-email .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.wp-easy-email .sr-only-focusable:active,
+.wp-easy-email .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.wp-easy-email [role="button"] {
+  cursor: pointer;
+}
+.wp-easy-email h1,
+.wp-easy-email h2,
+.wp-easy-email h3,
+.wp-easy-email h4,
+.wp-easy-email h5,
+.wp-easy-email h6,
+.wp-easy-email .h1,
+.wp-easy-email .h2,
+.wp-easy-email .h3,
+.wp-easy-email .h4,
+.wp-easy-email .h5,
+.wp-easy-email .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+.wp-easy-email h1 small,
+.wp-easy-email h2 small,
+.wp-easy-email h3 small,
+.wp-easy-email h4 small,
+.wp-easy-email h5 small,
+.wp-easy-email h6 small,
+.wp-easy-email .h1 small,
+.wp-easy-email .h2 small,
+.wp-easy-email .h3 small,
+.wp-easy-email .h4 small,
+.wp-easy-email .h5 small,
+.wp-easy-email .h6 small,
+.wp-easy-email h1 .small,
+.wp-easy-email h2 .small,
+.wp-easy-email h3 .small,
+.wp-easy-email h4 .small,
+.wp-easy-email h5 .small,
+.wp-easy-email h6 .small,
+.wp-easy-email .h1 .small,
+.wp-easy-email .h2 .small,
+.wp-easy-email .h3 .small,
+.wp-easy-email .h4 .small,
+.wp-easy-email .h5 .small,
+.wp-easy-email .h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.wp-easy-email h1,
+.wp-easy-email .h1,
+.wp-easy-email h2,
+.wp-easy-email .h2,
+.wp-easy-email h3,
+.wp-easy-email .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.wp-easy-email h1 small,
+.wp-easy-email .h1 small,
+.wp-easy-email h2 small,
+.wp-easy-email .h2 small,
+.wp-easy-email h3 small,
+.wp-easy-email .h3 small,
+.wp-easy-email h1 .small,
+.wp-easy-email .h1 .small,
+.wp-easy-email h2 .small,
+.wp-easy-email .h2 .small,
+.wp-easy-email h3 .small,
+.wp-easy-email .h3 .small {
+  font-size: 65%;
+}
+.wp-easy-email h4,
+.wp-easy-email .h4,
+.wp-easy-email h5,
+.wp-easy-email .h5,
+.wp-easy-email h6,
+.wp-easy-email .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wp-easy-email h4 small,
+.wp-easy-email .h4 small,
+.wp-easy-email h5 small,
+.wp-easy-email .h5 small,
+.wp-easy-email h6 small,
+.wp-easy-email .h6 small,
+.wp-easy-email h4 .small,
+.wp-easy-email .h4 .small,
+.wp-easy-email h5 .small,
+.wp-easy-email .h5 .small,
+.wp-easy-email h6 .small,
+.wp-easy-email .h6 .small {
+  font-size: 75%;
+}
+.wp-easy-email h1,
+.wp-easy-email .h1 {
+  font-size: 36px;
+}
+.wp-easy-email h2,
+.wp-easy-email .h2 {
+  font-size: 30px;
+}
+.wp-easy-email h3,
+.wp-easy-email .h3 {
+  font-size: 24px;
+}
+.wp-easy-email h4,
+.wp-easy-email .h4 {
+  font-size: 18px;
+}
+.wp-easy-email h5,
+.wp-easy-email .h5 {
+  font-size: 14px;
+}
+.wp-easy-email h6,
+.wp-easy-email .h6 {
+  font-size: 12px;
+}
+.wp-easy-email p {
+  margin: 0 0 10px;
+}
+.wp-easy-email .lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .lead {
+    font-size: 21px;
+  }
+}
+.wp-easy-email small,
+.wp-easy-email .small {
+  font-size: 85%;
+}
+.wp-easy-email mark,
+.wp-easy-email .mark {
+  background-color: #fcf8e3;
+  padding: 0.2em;
+}
+.wp-easy-email .text-left {
+  text-align: left;
+}
+.wp-easy-email .text-right {
+  text-align: right;
+}
+.wp-easy-email .text-center {
+  text-align: center;
+}
+.wp-easy-email .text-justify {
+  text-align: justify;
+}
+.wp-easy-email .text-nowrap {
+  white-space: nowrap;
+}
+.wp-easy-email .text-lowercase {
+  text-transform: lowercase;
+}
+.wp-easy-email .text-uppercase {
+  text-transform: uppercase;
+}
+.wp-easy-email .text-capitalize {
+  text-transform: capitalize;
+}
+.wp-easy-email .text-muted {
+  color: #777777;
+}
+.wp-easy-email .text-primary {
+  color: #337ab7;
+}
+a.wp-easy-email .text-primary:hover,
+a.wp-easy-email .text-primary:focus {
+  color: #286090;
+}
+.wp-easy-email .text-success {
+  color: #3c763d;
+}
+a.wp-easy-email .text-success:hover,
+a.wp-easy-email .text-success:focus {
+  color: #2b542c;
+}
+.wp-easy-email .text-info {
+  color: #31708f;
+}
+a.wp-easy-email .text-info:hover,
+a.wp-easy-email .text-info:focus {
+  color: #245269;
+}
+.wp-easy-email .text-warning {
+  color: #8a6d3b;
+}
+a.wp-easy-email .text-warning:hover,
+a.wp-easy-email .text-warning:focus {
+  color: #66512c;
+}
+.wp-easy-email .text-danger {
+  color: #a94442;
+}
+a.wp-easy-email .text-danger:hover,
+a.wp-easy-email .text-danger:focus {
+  color: #843534;
+}
+.wp-easy-email .bg-primary {
+  color: #fff;
+  background-color: #337ab7;
+}
+a.wp-easy-email .bg-primary:hover,
+a.wp-easy-email .bg-primary:focus {
+  background-color: #286090;
+}
+.wp-easy-email .bg-success {
+  background-color: #dff0d8;
+}
+a.wp-easy-email .bg-success:hover,
+a.wp-easy-email .bg-success:focus {
+  background-color: #c1e2b3;
+}
+.wp-easy-email .bg-info {
+  background-color: #d9edf7;
+}
+a.wp-easy-email .bg-info:hover,
+a.wp-easy-email .bg-info:focus {
+  background-color: #afd9ee;
+}
+.wp-easy-email .bg-warning {
+  background-color: #fcf8e3;
+}
+a.wp-easy-email .bg-warning:hover,
+a.wp-easy-email .bg-warning:focus {
+  background-color: #f7ecb5;
+}
+.wp-easy-email .bg-danger {
+  background-color: #f2dede;
+}
+a.wp-easy-email .bg-danger:hover,
+a.wp-easy-email .bg-danger:focus {
+  background-color: #e4b9b9;
+}
+.wp-easy-email .page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.wp-easy-email ul,
+.wp-easy-email ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.wp-easy-email ul ul,
+.wp-easy-email ol ul,
+.wp-easy-email ul ol,
+.wp-easy-email ol ol {
+  margin-bottom: 0;
+}
+.wp-easy-email .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.wp-easy-email .list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.wp-easy-email .list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.wp-easy-email dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.wp-easy-email dt,
+.wp-easy-email dd {
+  line-height: 1.42857143;
+}
+.wp-easy-email dt {
+  font-weight: bold;
+}
+.wp-easy-email dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .wp-easy-email .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+.wp-easy-email abbr[title],
+.wp-easy-email abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #777777;
+}
+.wp-easy-email .initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+.wp-easy-email blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+.wp-easy-email blockquote p:last-child,
+.wp-easy-email blockquote ul:last-child,
+.wp-easy-email blockquote ol:last-child {
+  margin-bottom: 0;
+}
+.wp-easy-email blockquote footer,
+.wp-easy-email blockquote small,
+.wp-easy-email blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777777;
+}
+.wp-easy-email blockquote footer:before,
+.wp-easy-email blockquote small:before,
+.wp-easy-email blockquote .small:before {
+  content: '\2014 \00A0';
+}
+.wp-easy-email .blockquote-reverse,
+.wp-easy-email blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+.wp-easy-email .blockquote-reverse footer:before,
+.wp-easy-email blockquote.pull-right footer:before,
+.wp-easy-email .blockquote-reverse small:before,
+.wp-easy-email blockquote.pull-right small:before,
+.wp-easy-email .blockquote-reverse .small:before,
+.wp-easy-email blockquote.pull-right .small:before {
+  content: '';
+}
+.wp-easy-email .blockquote-reverse footer:after,
+.wp-easy-email blockquote.pull-right footer:after,
+.wp-easy-email .blockquote-reverse small:after,
+.wp-easy-email blockquote.pull-right small:after,
+.wp-easy-email .blockquote-reverse .small:after,
+.wp-easy-email blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+.wp-easy-email address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+.wp-easy-email code,
+.wp-easy-email kbd,
+.wp-easy-email pre,
+.wp-easy-email samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.wp-easy-email code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+.wp-easy-email kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.wp-easy-email kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: bold;
+  box-shadow: none;
+}
+.wp-easy-email pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.wp-easy-email pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+.wp-easy-email .pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+.wp-easy-email .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-easy-email .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .container {
+    width: 1170px;
+  }
+}
+.wp-easy-email .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wp-easy-email .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.wp-easy-email .col-xs-1,
+.wp-easy-email .col-sm-1,
+.wp-easy-email .col-md-1,
+.wp-easy-email .col-lg-1,
+.wp-easy-email .col-xs-2,
+.wp-easy-email .col-sm-2,
+.wp-easy-email .col-md-2,
+.wp-easy-email .col-lg-2,
+.wp-easy-email .col-xs-3,
+.wp-easy-email .col-sm-3,
+.wp-easy-email .col-md-3,
+.wp-easy-email .col-lg-3,
+.wp-easy-email .col-xs-4,
+.wp-easy-email .col-sm-4,
+.wp-easy-email .col-md-4,
+.wp-easy-email .col-lg-4,
+.wp-easy-email .col-xs-5,
+.wp-easy-email .col-sm-5,
+.wp-easy-email .col-md-5,
+.wp-easy-email .col-lg-5,
+.wp-easy-email .col-xs-6,
+.wp-easy-email .col-sm-6,
+.wp-easy-email .col-md-6,
+.wp-easy-email .col-lg-6,
+.wp-easy-email .col-xs-7,
+.wp-easy-email .col-sm-7,
+.wp-easy-email .col-md-7,
+.wp-easy-email .col-lg-7,
+.wp-easy-email .col-xs-8,
+.wp-easy-email .col-sm-8,
+.wp-easy-email .col-md-8,
+.wp-easy-email .col-lg-8,
+.wp-easy-email .col-xs-9,
+.wp-easy-email .col-sm-9,
+.wp-easy-email .col-md-9,
+.wp-easy-email .col-lg-9,
+.wp-easy-email .col-xs-10,
+.wp-easy-email .col-sm-10,
+.wp-easy-email .col-md-10,
+.wp-easy-email .col-lg-10,
+.wp-easy-email .col-xs-11,
+.wp-easy-email .col-sm-11,
+.wp-easy-email .col-md-11,
+.wp-easy-email .col-lg-11,
+.wp-easy-email .col-xs-12,
+.wp-easy-email .col-sm-12,
+.wp-easy-email .col-md-12,
+.wp-easy-email .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wp-easy-email .col-xs-1,
+.wp-easy-email .col-xs-2,
+.wp-easy-email .col-xs-3,
+.wp-easy-email .col-xs-4,
+.wp-easy-email .col-xs-5,
+.wp-easy-email .col-xs-6,
+.wp-easy-email .col-xs-7,
+.wp-easy-email .col-xs-8,
+.wp-easy-email .col-xs-9,
+.wp-easy-email .col-xs-10,
+.wp-easy-email .col-xs-11,
+.wp-easy-email .col-xs-12 {
+  float: left;
+}
+.wp-easy-email .col-xs-12 {
+  width: 100%;
+}
+.wp-easy-email .col-xs-11 {
+  width: 91.66666667%;
+}
+.wp-easy-email .col-xs-10 {
+  width: 83.33333333%;
+}
+.wp-easy-email .col-xs-9 {
+  width: 75%;
+}
+.wp-easy-email .col-xs-8 {
+  width: 66.66666667%;
+}
+.wp-easy-email .col-xs-7 {
+  width: 58.33333333%;
+}
+.wp-easy-email .col-xs-6 {
+  width: 50%;
+}
+.wp-easy-email .col-xs-5 {
+  width: 41.66666667%;
+}
+.wp-easy-email .col-xs-4 {
+  width: 33.33333333%;
+}
+.wp-easy-email .col-xs-3 {
+  width: 25%;
+}
+.wp-easy-email .col-xs-2 {
+  width: 16.66666667%;
+}
+.wp-easy-email .col-xs-1 {
+  width: 8.33333333%;
+}
+.wp-easy-email .col-xs-pull-12 {
+  right: 100%;
+}
+.wp-easy-email .col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.wp-easy-email .col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.wp-easy-email .col-xs-pull-9 {
+  right: 75%;
+}
+.wp-easy-email .col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.wp-easy-email .col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.wp-easy-email .col-xs-pull-6 {
+  right: 50%;
+}
+.wp-easy-email .col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.wp-easy-email .col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.wp-easy-email .col-xs-pull-3 {
+  right: 25%;
+}
+.wp-easy-email .col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.wp-easy-email .col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.wp-easy-email .col-xs-pull-0 {
+  right: auto;
+}
+.wp-easy-email .col-xs-push-12 {
+  left: 100%;
+}
+.wp-easy-email .col-xs-push-11 {
+  left: 91.66666667%;
+}
+.wp-easy-email .col-xs-push-10 {
+  left: 83.33333333%;
+}
+.wp-easy-email .col-xs-push-9 {
+  left: 75%;
+}
+.wp-easy-email .col-xs-push-8 {
+  left: 66.66666667%;
+}
+.wp-easy-email .col-xs-push-7 {
+  left: 58.33333333%;
+}
+.wp-easy-email .col-xs-push-6 {
+  left: 50%;
+}
+.wp-easy-email .col-xs-push-5 {
+  left: 41.66666667%;
+}
+.wp-easy-email .col-xs-push-4 {
+  left: 33.33333333%;
+}
+.wp-easy-email .col-xs-push-3 {
+  left: 25%;
+}
+.wp-easy-email .col-xs-push-2 {
+  left: 16.66666667%;
+}
+.wp-easy-email .col-xs-push-1 {
+  left: 8.33333333%;
+}
+.wp-easy-email .col-xs-push-0 {
+  left: auto;
+}
+.wp-easy-email .col-xs-offset-12 {
+  margin-left: 100%;
+}
+.wp-easy-email .col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.wp-easy-email .col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.wp-easy-email .col-xs-offset-9 {
+  margin-left: 75%;
+}
+.wp-easy-email .col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.wp-easy-email .col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.wp-easy-email .col-xs-offset-6 {
+  margin-left: 50%;
+}
+.wp-easy-email .col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.wp-easy-email .col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.wp-easy-email .col-xs-offset-3 {
+  margin-left: 25%;
+}
+.wp-easy-email .col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.wp-easy-email .col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.wp-easy-email .col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .col-sm-1,
+  .wp-easy-email .col-sm-2,
+  .wp-easy-email .col-sm-3,
+  .wp-easy-email .col-sm-4,
+  .wp-easy-email .col-sm-5,
+  .wp-easy-email .col-sm-6,
+  .wp-easy-email .col-sm-7,
+  .wp-easy-email .col-sm-8,
+  .wp-easy-email .col-sm-9,
+  .wp-easy-email .col-sm-10,
+  .wp-easy-email .col-sm-11,
+  .wp-easy-email .col-sm-12 {
+    float: left;
+  }
+  .wp-easy-email .col-sm-12 {
+    width: 100%;
+  }
+  .wp-easy-email .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .wp-easy-email .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .wp-easy-email .col-sm-9 {
+    width: 75%;
+  }
+  .wp-easy-email .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .wp-easy-email .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .wp-easy-email .col-sm-6 {
+    width: 50%;
+  }
+  .wp-easy-email .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .wp-easy-email .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .wp-easy-email .col-sm-3 {
+    width: 25%;
+  }
+  .wp-easy-email .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .wp-easy-email .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .wp-easy-email .col-sm-pull-12 {
+    right: 100%;
+  }
+  .wp-easy-email .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .wp-easy-email .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .wp-easy-email .col-sm-pull-9 {
+    right: 75%;
+  }
+  .wp-easy-email .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .wp-easy-email .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .wp-easy-email .col-sm-pull-6 {
+    right: 50%;
+  }
+  .wp-easy-email .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .wp-easy-email .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .wp-easy-email .col-sm-pull-3 {
+    right: 25%;
+  }
+  .wp-easy-email .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .wp-easy-email .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .wp-easy-email .col-sm-pull-0 {
+    right: auto;
+  }
+  .wp-easy-email .col-sm-push-12 {
+    left: 100%;
+  }
+  .wp-easy-email .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .wp-easy-email .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .wp-easy-email .col-sm-push-9 {
+    left: 75%;
+  }
+  .wp-easy-email .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .wp-easy-email .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .wp-easy-email .col-sm-push-6 {
+    left: 50%;
+  }
+  .wp-easy-email .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .wp-easy-email .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .wp-easy-email .col-sm-push-3 {
+    left: 25%;
+  }
+  .wp-easy-email .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .wp-easy-email .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .wp-easy-email .col-sm-push-0 {
+    left: auto;
+  }
+  .wp-easy-email .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .wp-easy-email .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .wp-easy-email .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .wp-easy-email .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .wp-easy-email .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .wp-easy-email .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .wp-easy-email .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .wp-easy-email .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .wp-easy-email .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .wp-easy-email .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .wp-easy-email .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .wp-easy-email .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .wp-easy-email .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .wp-easy-email .col-md-1,
+  .wp-easy-email .col-md-2,
+  .wp-easy-email .col-md-3,
+  .wp-easy-email .col-md-4,
+  .wp-easy-email .col-md-5,
+  .wp-easy-email .col-md-6,
+  .wp-easy-email .col-md-7,
+  .wp-easy-email .col-md-8,
+  .wp-easy-email .col-md-9,
+  .wp-easy-email .col-md-10,
+  .wp-easy-email .col-md-11,
+  .wp-easy-email .col-md-12 {
+    float: left;
+  }
+  .wp-easy-email .col-md-12 {
+    width: 100%;
+  }
+  .wp-easy-email .col-md-11 {
+    width: 91.66666667%;
+  }
+  .wp-easy-email .col-md-10 {
+    width: 83.33333333%;
+  }
+  .wp-easy-email .col-md-9 {
+    width: 75%;
+  }
+  .wp-easy-email .col-md-8 {
+    width: 66.66666667%;
+  }
+  .wp-easy-email .col-md-7 {
+    width: 58.33333333%;
+  }
+  .wp-easy-email .col-md-6 {
+    width: 50%;
+  }
+  .wp-easy-email .col-md-5 {
+    width: 41.66666667%;
+  }
+  .wp-easy-email .col-md-4 {
+    width: 33.33333333%;
+  }
+  .wp-easy-email .col-md-3 {
+    width: 25%;
+  }
+  .wp-easy-email .col-md-2 {
+    width: 16.66666667%;
+  }
+  .wp-easy-email .col-md-1 {
+    width: 8.33333333%;
+  }
+  .wp-easy-email .col-md-pull-12 {
+    right: 100%;
+  }
+  .wp-easy-email .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .wp-easy-email .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .wp-easy-email .col-md-pull-9 {
+    right: 75%;
+  }
+  .wp-easy-email .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .wp-easy-email .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .wp-easy-email .col-md-pull-6 {
+    right: 50%;
+  }
+  .wp-easy-email .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .wp-easy-email .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .wp-easy-email .col-md-pull-3 {
+    right: 25%;
+  }
+  .wp-easy-email .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .wp-easy-email .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .wp-easy-email .col-md-pull-0 {
+    right: auto;
+  }
+  .wp-easy-email .col-md-push-12 {
+    left: 100%;
+  }
+  .wp-easy-email .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .wp-easy-email .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .wp-easy-email .col-md-push-9 {
+    left: 75%;
+  }
+  .wp-easy-email .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .wp-easy-email .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .wp-easy-email .col-md-push-6 {
+    left: 50%;
+  }
+  .wp-easy-email .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .wp-easy-email .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .wp-easy-email .col-md-push-3 {
+    left: 25%;
+  }
+  .wp-easy-email .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .wp-easy-email .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .wp-easy-email .col-md-push-0 {
+    left: auto;
+  }
+  .wp-easy-email .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .wp-easy-email .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .wp-easy-email .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .wp-easy-email .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .wp-easy-email .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .wp-easy-email .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .wp-easy-email .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .wp-easy-email .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .wp-easy-email .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .wp-easy-email .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .wp-easy-email .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .wp-easy-email .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .wp-easy-email .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .col-lg-1,
+  .wp-easy-email .col-lg-2,
+  .wp-easy-email .col-lg-3,
+  .wp-easy-email .col-lg-4,
+  .wp-easy-email .col-lg-5,
+  .wp-easy-email .col-lg-6,
+  .wp-easy-email .col-lg-7,
+  .wp-easy-email .col-lg-8,
+  .wp-easy-email .col-lg-9,
+  .wp-easy-email .col-lg-10,
+  .wp-easy-email .col-lg-11,
+  .wp-easy-email .col-lg-12 {
+    float: left;
+  }
+  .wp-easy-email .col-lg-12 {
+    width: 100%;
+  }
+  .wp-easy-email .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .wp-easy-email .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .wp-easy-email .col-lg-9 {
+    width: 75%;
+  }
+  .wp-easy-email .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .wp-easy-email .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .wp-easy-email .col-lg-6 {
+    width: 50%;
+  }
+  .wp-easy-email .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .wp-easy-email .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .wp-easy-email .col-lg-3 {
+    width: 25%;
+  }
+  .wp-easy-email .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .wp-easy-email .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .wp-easy-email .col-lg-pull-12 {
+    right: 100%;
+  }
+  .wp-easy-email .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .wp-easy-email .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .wp-easy-email .col-lg-pull-9 {
+    right: 75%;
+  }
+  .wp-easy-email .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .wp-easy-email .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .wp-easy-email .col-lg-pull-6 {
+    right: 50%;
+  }
+  .wp-easy-email .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .wp-easy-email .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .wp-easy-email .col-lg-pull-3 {
+    right: 25%;
+  }
+  .wp-easy-email .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .wp-easy-email .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .wp-easy-email .col-lg-pull-0 {
+    right: auto;
+  }
+  .wp-easy-email .col-lg-push-12 {
+    left: 100%;
+  }
+  .wp-easy-email .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .wp-easy-email .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .wp-easy-email .col-lg-push-9 {
+    left: 75%;
+  }
+  .wp-easy-email .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .wp-easy-email .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .wp-easy-email .col-lg-push-6 {
+    left: 50%;
+  }
+  .wp-easy-email .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .wp-easy-email .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .wp-easy-email .col-lg-push-3 {
+    left: 25%;
+  }
+  .wp-easy-email .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .wp-easy-email .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .wp-easy-email .col-lg-push-0 {
+    left: auto;
+  }
+  .wp-easy-email .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .wp-easy-email .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .wp-easy-email .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .wp-easy-email .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .wp-easy-email .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .wp-easy-email .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .wp-easy-email .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .wp-easy-email .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .wp-easy-email .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .wp-easy-email .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .wp-easy-email .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .wp-easy-email .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .wp-easy-email .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+.wp-easy-email table {
+  background-color: transparent;
+}
+.wp-easy-email caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+.wp-easy-email th {
+  text-align: left;
+}
+.wp-easy-email .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.wp-easy-email .table > thead > tr > th,
+.wp-easy-email .table > tbody > tr > th,
+.wp-easy-email .table > tfoot > tr > th,
+.wp-easy-email .table > thead > tr > td,
+.wp-easy-email .table > tbody > tr > td,
+.wp-easy-email .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.wp-easy-email .table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.wp-easy-email .table > caption + thead > tr:first-child > th,
+.wp-easy-email .table > colgroup + thead > tr:first-child > th,
+.wp-easy-email .table > thead:first-child > tr:first-child > th,
+.wp-easy-email .table > caption + thead > tr:first-child > td,
+.wp-easy-email .table > colgroup + thead > tr:first-child > td,
+.wp-easy-email .table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.wp-easy-email .table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.wp-easy-email .table .table {
+  background-color: #fff;
+}
+.wp-easy-email .table-condensed > thead > tr > th,
+.wp-easy-email .table-condensed > tbody > tr > th,
+.wp-easy-email .table-condensed > tfoot > tr > th,
+.wp-easy-email .table-condensed > thead > tr > td,
+.wp-easy-email .table-condensed > tbody > tr > td,
+.wp-easy-email .table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.wp-easy-email .table-bordered {
+  border: 1px solid #ddd;
+}
+.wp-easy-email .table-bordered > thead > tr > th,
+.wp-easy-email .table-bordered > tbody > tr > th,
+.wp-easy-email .table-bordered > tfoot > tr > th,
+.wp-easy-email .table-bordered > thead > tr > td,
+.wp-easy-email .table-bordered > tbody > tr > td,
+.wp-easy-email .table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.wp-easy-email .table-bordered > thead > tr > th,
+.wp-easy-email .table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.wp-easy-email .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.wp-easy-email .table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.wp-easy-email table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.wp-easy-email table td[class*="col-"],
+.wp-easy-email table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+.wp-easy-email .table > thead > tr > td.active,
+.wp-easy-email .table > tbody > tr > td.active,
+.wp-easy-email .table > tfoot > tr > td.active,
+.wp-easy-email .table > thead > tr > th.active,
+.wp-easy-email .table > tbody > tr > th.active,
+.wp-easy-email .table > tfoot > tr > th.active,
+.wp-easy-email .table > thead > tr.active > td,
+.wp-easy-email .table > tbody > tr.active > td,
+.wp-easy-email .table > tfoot > tr.active > td,
+.wp-easy-email .table > thead > tr.active > th,
+.wp-easy-email .table > tbody > tr.active > th,
+.wp-easy-email .table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.wp-easy-email .table-hover > tbody > tr > td.active:hover,
+.wp-easy-email .table-hover > tbody > tr > th.active:hover,
+.wp-easy-email .table-hover > tbody > tr.active:hover > td,
+.wp-easy-email .table-hover > tbody > tr:hover > .active,
+.wp-easy-email .table-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.wp-easy-email .table > thead > tr > td.success,
+.wp-easy-email .table > tbody > tr > td.success,
+.wp-easy-email .table > tfoot > tr > td.success,
+.wp-easy-email .table > thead > tr > th.success,
+.wp-easy-email .table > tbody > tr > th.success,
+.wp-easy-email .table > tfoot > tr > th.success,
+.wp-easy-email .table > thead > tr.success > td,
+.wp-easy-email .table > tbody > tr.success > td,
+.wp-easy-email .table > tfoot > tr.success > td,
+.wp-easy-email .table > thead > tr.success > th,
+.wp-easy-email .table > tbody > tr.success > th,
+.wp-easy-email .table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.wp-easy-email .table-hover > tbody > tr > td.success:hover,
+.wp-easy-email .table-hover > tbody > tr > th.success:hover,
+.wp-easy-email .table-hover > tbody > tr.success:hover > td,
+.wp-easy-email .table-hover > tbody > tr:hover > .success,
+.wp-easy-email .table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.wp-easy-email .table > thead > tr > td.info,
+.wp-easy-email .table > tbody > tr > td.info,
+.wp-easy-email .table > tfoot > tr > td.info,
+.wp-easy-email .table > thead > tr > th.info,
+.wp-easy-email .table > tbody > tr > th.info,
+.wp-easy-email .table > tfoot > tr > th.info,
+.wp-easy-email .table > thead > tr.info > td,
+.wp-easy-email .table > tbody > tr.info > td,
+.wp-easy-email .table > tfoot > tr.info > td,
+.wp-easy-email .table > thead > tr.info > th,
+.wp-easy-email .table > tbody > tr.info > th,
+.wp-easy-email .table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.wp-easy-email .table-hover > tbody > tr > td.info:hover,
+.wp-easy-email .table-hover > tbody > tr > th.info:hover,
+.wp-easy-email .table-hover > tbody > tr.info:hover > td,
+.wp-easy-email .table-hover > tbody > tr:hover > .info,
+.wp-easy-email .table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+.wp-easy-email .table > thead > tr > td.warning,
+.wp-easy-email .table > tbody > tr > td.warning,
+.wp-easy-email .table > tfoot > tr > td.warning,
+.wp-easy-email .table > thead > tr > th.warning,
+.wp-easy-email .table > tbody > tr > th.warning,
+.wp-easy-email .table > tfoot > tr > th.warning,
+.wp-easy-email .table > thead > tr.warning > td,
+.wp-easy-email .table > tbody > tr.warning > td,
+.wp-easy-email .table > tfoot > tr.warning > td,
+.wp-easy-email .table > thead > tr.warning > th,
+.wp-easy-email .table > tbody > tr.warning > th,
+.wp-easy-email .table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.wp-easy-email .table-hover > tbody > tr > td.warning:hover,
+.wp-easy-email .table-hover > tbody > tr > th.warning:hover,
+.wp-easy-email .table-hover > tbody > tr.warning:hover > td,
+.wp-easy-email .table-hover > tbody > tr:hover > .warning,
+.wp-easy-email .table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+.wp-easy-email .table > thead > tr > td.danger,
+.wp-easy-email .table > tbody > tr > td.danger,
+.wp-easy-email .table > tfoot > tr > td.danger,
+.wp-easy-email .table > thead > tr > th.danger,
+.wp-easy-email .table > tbody > tr > th.danger,
+.wp-easy-email .table > tfoot > tr > th.danger,
+.wp-easy-email .table > thead > tr.danger > td,
+.wp-easy-email .table > tbody > tr.danger > td,
+.wp-easy-email .table > tfoot > tr.danger > td,
+.wp-easy-email .table > thead > tr.danger > th,
+.wp-easy-email .table > tbody > tr.danger > th,
+.wp-easy-email .table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+.wp-easy-email .table-hover > tbody > tr > td.danger:hover,
+.wp-easy-email .table-hover > tbody > tr > th.danger:hover,
+.wp-easy-email .table-hover > tbody > tr.danger:hover > td,
+.wp-easy-email .table-hover > tbody > tr:hover > .danger,
+.wp-easy-email .table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+.wp-easy-email .table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+@media screen and (max-width: 767px) {
+  .wp-easy-email .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .wp-easy-email .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .wp-easy-email .table-responsive > .table > thead > tr > th,
+  .wp-easy-email .table-responsive > .table > tbody > tr > th,
+  .wp-easy-email .table-responsive > .table > tfoot > tr > th,
+  .wp-easy-email .table-responsive > .table > thead > tr > td,
+  .wp-easy-email .table-responsive > .table > tbody > tr > td,
+  .wp-easy-email .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .wp-easy-email .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .wp-easy-email .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .wp-easy-email .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .wp-easy-email .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .wp-easy-email .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .wp-easy-email .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .wp-easy-email .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+.wp-easy-email fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.wp-easy-email legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.wp-easy-email label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.wp-easy-email input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wp-easy-email input[type="radio"],
+.wp-easy-email input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+.wp-easy-email input[type="file"] {
+  display: block;
+}
+.wp-easy-email input[type="range"] {
+  display: block;
+  width: 100%;
+}
+.wp-easy-email select[multiple],
+.wp-easy-email select[size] {
+  height: auto;
+}
+.wp-easy-email input[type="file"]:focus,
+.wp-easy-email input[type="radio"]:focus,
+.wp-easy-email input[type="checkbox"]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.wp-easy-email output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+}
+.wp-easy-email .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.wp-easy-email .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.wp-easy-email .form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.wp-easy-email .form-control:-ms-input-placeholder {
+  color: #999;
+}
+.wp-easy-email .form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.wp-easy-email .form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.wp-easy-email .form-control[disabled],
+.wp-easy-email .form-control[readonly],
+fieldset[disabled] .wp-easy-email .form-control {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.wp-easy-email .form-control[disabled],
+fieldset[disabled] .wp-easy-email .form-control {
+  cursor: not-allowed;
+}
+textarea.wp-easy-email .form-control {
+  height: auto;
+}
+.wp-easy-email input[type="search"] {
+  -webkit-appearance: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .wp-easy-email input[type="date"].form-control,
+  .wp-easy-email input[type="time"].form-control,
+  .wp-easy-email input[type="datetime-local"].form-control,
+  .wp-easy-email input[type="month"].form-control {
+    line-height: 34px;
+  }
+  .wp-easy-email input[type="date"].input-sm,
+  .wp-easy-email input[type="time"].input-sm,
+  .wp-easy-email input[type="datetime-local"].input-sm,
+  .wp-easy-email input[type="month"].input-sm,
+  .input-group-sm .wp-easy-email input[type="date"],
+  .input-group-sm .wp-easy-email input[type="time"],
+  .input-group-sm .wp-easy-email input[type="datetime-local"],
+  .input-group-sm .wp-easy-email input[type="month"] {
+    line-height: 30px;
+  }
+  .wp-easy-email input[type="date"].input-lg,
+  .wp-easy-email input[type="time"].input-lg,
+  .wp-easy-email input[type="datetime-local"].input-lg,
+  .wp-easy-email input[type="month"].input-lg,
+  .input-group-lg .wp-easy-email input[type="date"],
+  .input-group-lg .wp-easy-email input[type="time"],
+  .input-group-lg .wp-easy-email input[type="datetime-local"],
+  .input-group-lg .wp-easy-email input[type="month"] {
+    line-height: 46px;
+  }
+}
+.wp-easy-email .form-group {
+  margin-bottom: 15px;
+}
+.wp-easy-email .radio,
+.wp-easy-email .checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wp-easy-email .radio label,
+.wp-easy-email .checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.wp-easy-email .radio input[type="radio"],
+.wp-easy-email .radio-inline input[type="radio"],
+.wp-easy-email .checkbox input[type="checkbox"],
+.wp-easy-email .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+.wp-easy-email .radio + .radio,
+.wp-easy-email .checkbox + .checkbox {
+  margin-top: -5px;
+}
+.wp-easy-email .radio-inline,
+.wp-easy-email .checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.wp-easy-email .radio-inline + .radio-inline,
+.wp-easy-email .checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.wp-easy-email input[type="radio"][disabled],
+.wp-easy-email input[type="checkbox"][disabled],
+.wp-easy-email input[type="radio"].disabled,
+.wp-easy-email input[type="checkbox"].disabled,
+fieldset[disabled] .wp-easy-email input[type="radio"],
+fieldset[disabled] .wp-easy-email input[type="checkbox"] {
+  cursor: not-allowed;
+}
+.wp-easy-email .radio-inline.disabled,
+.wp-easy-email .checkbox-inline.disabled,
+fieldset[disabled] .wp-easy-email .radio-inline,
+fieldset[disabled] .wp-easy-email .checkbox-inline {
+  cursor: not-allowed;
+}
+.wp-easy-email .radio.disabled label,
+.wp-easy-email .checkbox.disabled label,
+fieldset[disabled] .wp-easy-email .radio label,
+fieldset[disabled] .wp-easy-email .checkbox label {
+  cursor: not-allowed;
+}
+.wp-easy-email .form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  min-height: 34px;
+}
+.wp-easy-email .form-control-static.input-lg,
+.wp-easy-email .form-control-static.input-sm {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wp-easy-email .input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.wp-easy-email .input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.wp-easy-email .input-sm,
+select[multiple].wp-easy-email .input-sm {
+  height: auto;
+}
+.wp-easy-email .form-group-sm .form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.wp-easy-email .form-group-sm select.form-control {
+  height: 30px;
+  line-height: 30px;
+}
+.wp-easy-email .form-group-sm textarea.form-control,
+.wp-easy-email .form-group-sm select[multiple].form-control {
+  height: auto;
+}
+.wp-easy-email .form-group-sm .form-control-static {
+  height: 30px;
+  min-height: 32px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.wp-easy-email .input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+select.wp-easy-email .input-lg {
+  height: 46px;
+  line-height: 46px;
+}
+textarea.wp-easy-email .input-lg,
+select[multiple].wp-easy-email .input-lg {
+  height: auto;
+}
+.wp-easy-email .form-group-lg .form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.wp-easy-email .form-group-lg select.form-control {
+  height: 46px;
+  line-height: 46px;
+}
+.wp-easy-email .form-group-lg textarea.form-control,
+.wp-easy-email .form-group-lg select[multiple].form-control {
+  height: auto;
+}
+.wp-easy-email .form-group-lg .form-control-static {
+  height: 46px;
+  min-height: 38px;
+  padding: 11px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.wp-easy-email .has-feedback {
+  position: relative;
+}
+.wp-easy-email .has-feedback .form-control {
+  padding-right: 42.5px;
+}
+.wp-easy-email .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+.wp-easy-email .input-lg + .form-control-feedback,
+.wp-easy-email .input-group-lg + .form-control-feedback,
+.wp-easy-email .form-group-lg .form-control + .form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+.wp-easy-email .input-sm + .form-control-feedback,
+.wp-easy-email .input-group-sm + .form-control-feedback,
+.wp-easy-email .form-group-sm .form-control + .form-control-feedback {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.wp-easy-email .has-success .help-block,
+.wp-easy-email .has-success .control-label,
+.wp-easy-email .has-success .radio,
+.wp-easy-email .has-success .checkbox,
+.wp-easy-email .has-success .radio-inline,
+.wp-easy-email .has-success .checkbox-inline,
+.wp-easy-email .has-success.radio label,
+.wp-easy-email .has-success.checkbox label,
+.wp-easy-email .has-success.radio-inline label,
+.wp-easy-email .has-success.checkbox-inline label {
+  color: #3c763d;
+}
+.wp-easy-email .has-success .form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.wp-easy-email .has-success .form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+.wp-easy-email .has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8;
+}
+.wp-easy-email .has-success .form-control-feedback {
+  color: #3c763d;
+}
+.wp-easy-email .has-warning .help-block,
+.wp-easy-email .has-warning .control-label,
+.wp-easy-email .has-warning .radio,
+.wp-easy-email .has-warning .checkbox,
+.wp-easy-email .has-warning .radio-inline,
+.wp-easy-email .has-warning .checkbox-inline,
+.wp-easy-email .has-warning.radio label,
+.wp-easy-email .has-warning.checkbox label,
+.wp-easy-email .has-warning.radio-inline label,
+.wp-easy-email .has-warning.checkbox-inline label {
+  color: #8a6d3b;
+}
+.wp-easy-email .has-warning .form-control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.wp-easy-email .has-warning .form-control:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+}
+.wp-easy-email .has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+.wp-easy-email .has-warning .form-control-feedback {
+  color: #8a6d3b;
+}
+.wp-easy-email .has-error .help-block,
+.wp-easy-email .has-error .control-label,
+.wp-easy-email .has-error .radio,
+.wp-easy-email .has-error .checkbox,
+.wp-easy-email .has-error .radio-inline,
+.wp-easy-email .has-error .checkbox-inline,
+.wp-easy-email .has-error.radio label,
+.wp-easy-email .has-error.checkbox label,
+.wp-easy-email .has-error.radio-inline label,
+.wp-easy-email .has-error.checkbox-inline label {
+  color: #a94442;
+}
+.wp-easy-email .has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.wp-easy-email .has-error .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.wp-easy-email .has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede;
+}
+.wp-easy-email .has-error .form-control-feedback {
+  color: #a94442;
+}
+.wp-easy-email .has-feedback label ~ .form-control-feedback {
+  top: 25px;
+}
+.wp-easy-email .has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0;
+}
+.wp-easy-email .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .wp-easy-email .form-inline .form-control-static {
+    display: inline-block;
+  }
+  .wp-easy-email .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .wp-easy-email .form-inline .input-group .input-group-addon,
+  .wp-easy-email .form-inline .input-group .input-group-btn,
+  .wp-easy-email .form-inline .input-group .form-control {
+    width: auto;
+  }
+  .wp-easy-email .form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .wp-easy-email .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .form-inline .radio,
+  .wp-easy-email .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .form-inline .radio label,
+  .wp-easy-email .form-inline .checkbox label {
+    padding-left: 0;
+  }
+  .wp-easy-email .form-inline .radio input[type="radio"],
+  .wp-easy-email .form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .wp-easy-email .form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+.wp-easy-email .form-horizontal .radio,
+.wp-easy-email .form-horizontal .checkbox,
+.wp-easy-email .form-horizontal .radio-inline,
+.wp-easy-email .form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+.wp-easy-email .form-horizontal .radio,
+.wp-easy-email .form-horizontal .checkbox {
+  min-height: 27px;
+}
+.wp-easy-email .form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+}
+.wp-easy-email .form-horizontal .has-feedback .form-control-feedback {
+  right: 15px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .form-horizontal .form-group-lg .control-label {
+    padding-top: 11px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-easy-email .form-horizontal .form-group-sm .control-label {
+    padding-top: 6px;
+    font-size: 12px;
+  }
+}
+.wp-easy-email .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wp-easy-email .btn:focus,
+.wp-easy-email .btn:active:focus,
+.wp-easy-email .btn.active:focus,
+.wp-easy-email .btn.focus,
+.wp-easy-email .btn:active.focus,
+.wp-easy-email .btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.wp-easy-email .btn:hover,
+.wp-easy-email .btn:focus,
+.wp-easy-email .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.wp-easy-email .btn:active,
+.wp-easy-email .btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.wp-easy-email .btn.disabled,
+.wp-easy-email .btn[disabled],
+fieldset[disabled] .wp-easy-email .btn {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.wp-easy-email .btn.disabled,
+fieldset[disabled] a.wp-easy-email .btn {
+  pointer-events: none;
+}
+.wp-easy-email .btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.wp-easy-email .btn-default:focus,
+.wp-easy-email .btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.wp-easy-email .btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.wp-easy-email .btn-default:active,
+.wp-easy-email .btn-default.active,
+.open > .dropdown-toggle.wp-easy-email .btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.wp-easy-email .btn-default:active:hover,
+.wp-easy-email .btn-default.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-default:hover,
+.wp-easy-email .btn-default:active:focus,
+.wp-easy-email .btn-default.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-default:focus,
+.wp-easy-email .btn-default:active.focus,
+.wp-easy-email .btn-default.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-default.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.wp-easy-email .btn-default:active,
+.wp-easy-email .btn-default.active,
+.open > .dropdown-toggle.wp-easy-email .btn-default {
+  background-image: none;
+}
+.wp-easy-email .btn-default.disabled:hover,
+.wp-easy-email .btn-default[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-default:hover,
+.wp-easy-email .btn-default.disabled:focus,
+.wp-easy-email .btn-default[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-default:focus,
+.wp-easy-email .btn-default.disabled.focus,
+.wp-easy-email .btn-default[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.wp-easy-email .btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+.wp-easy-email .btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.wp-easy-email .btn-primary:focus,
+.wp-easy-email .btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.wp-easy-email .btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.wp-easy-email .btn-primary:active,
+.wp-easy-email .btn-primary.active,
+.open > .dropdown-toggle.wp-easy-email .btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.wp-easy-email .btn-primary:active:hover,
+.wp-easy-email .btn-primary.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-primary:hover,
+.wp-easy-email .btn-primary:active:focus,
+.wp-easy-email .btn-primary.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-primary:focus,
+.wp-easy-email .btn-primary:active.focus,
+.wp-easy-email .btn-primary.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-primary.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.wp-easy-email .btn-primary:active,
+.wp-easy-email .btn-primary.active,
+.open > .dropdown-toggle.wp-easy-email .btn-primary {
+  background-image: none;
+}
+.wp-easy-email .btn-primary.disabled:hover,
+.wp-easy-email .btn-primary[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-primary:hover,
+.wp-easy-email .btn-primary.disabled:focus,
+.wp-easy-email .btn-primary[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-primary:focus,
+.wp-easy-email .btn-primary.disabled.focus,
+.wp-easy-email .btn-primary[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-primary.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.wp-easy-email .btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.wp-easy-email .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.wp-easy-email .btn-success:focus,
+.wp-easy-email .btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.wp-easy-email .btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.wp-easy-email .btn-success:active,
+.wp-easy-email .btn-success.active,
+.open > .dropdown-toggle.wp-easy-email .btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.wp-easy-email .btn-success:active:hover,
+.wp-easy-email .btn-success.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-success:hover,
+.wp-easy-email .btn-success:active:focus,
+.wp-easy-email .btn-success.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-success:focus,
+.wp-easy-email .btn-success:active.focus,
+.wp-easy-email .btn-success.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-success.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.wp-easy-email .btn-success:active,
+.wp-easy-email .btn-success.active,
+.open > .dropdown-toggle.wp-easy-email .btn-success {
+  background-image: none;
+}
+.wp-easy-email .btn-success.disabled:hover,
+.wp-easy-email .btn-success[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-success:hover,
+.wp-easy-email .btn-success.disabled:focus,
+.wp-easy-email .btn-success[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-success:focus,
+.wp-easy-email .btn-success.disabled.focus,
+.wp-easy-email .btn-success[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-success.focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.wp-easy-email .btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.wp-easy-email .btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.wp-easy-email .btn-info:focus,
+.wp-easy-email .btn-info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+.wp-easy-email .btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.wp-easy-email .btn-info:active,
+.wp-easy-email .btn-info.active,
+.open > .dropdown-toggle.wp-easy-email .btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.wp-easy-email .btn-info:active:hover,
+.wp-easy-email .btn-info.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-info:hover,
+.wp-easy-email .btn-info:active:focus,
+.wp-easy-email .btn-info.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-info:focus,
+.wp-easy-email .btn-info:active.focus,
+.wp-easy-email .btn-info.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-info.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.wp-easy-email .btn-info:active,
+.wp-easy-email .btn-info.active,
+.open > .dropdown-toggle.wp-easy-email .btn-info {
+  background-image: none;
+}
+.wp-easy-email .btn-info.disabled:hover,
+.wp-easy-email .btn-info[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-info:hover,
+.wp-easy-email .btn-info.disabled:focus,
+.wp-easy-email .btn-info[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-info:focus,
+.wp-easy-email .btn-info.disabled.focus,
+.wp-easy-email .btn-info[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-info.focus {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.wp-easy-email .btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.wp-easy-email .btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.wp-easy-email .btn-warning:focus,
+.wp-easy-email .btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.wp-easy-email .btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.wp-easy-email .btn-warning:active,
+.wp-easy-email .btn-warning.active,
+.open > .dropdown-toggle.wp-easy-email .btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.wp-easy-email .btn-warning:active:hover,
+.wp-easy-email .btn-warning.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-warning:hover,
+.wp-easy-email .btn-warning:active:focus,
+.wp-easy-email .btn-warning.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-warning:focus,
+.wp-easy-email .btn-warning:active.focus,
+.wp-easy-email .btn-warning.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-warning.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.wp-easy-email .btn-warning:active,
+.wp-easy-email .btn-warning.active,
+.open > .dropdown-toggle.wp-easy-email .btn-warning {
+  background-image: none;
+}
+.wp-easy-email .btn-warning.disabled:hover,
+.wp-easy-email .btn-warning[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-warning:hover,
+.wp-easy-email .btn-warning.disabled:focus,
+.wp-easy-email .btn-warning[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-warning:focus,
+.wp-easy-email .btn-warning.disabled.focus,
+.wp-easy-email .btn-warning[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-warning.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.wp-easy-email .btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.wp-easy-email .btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.wp-easy-email .btn-danger:focus,
+.wp-easy-email .btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.wp-easy-email .btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.wp-easy-email .btn-danger:active,
+.wp-easy-email .btn-danger.active,
+.open > .dropdown-toggle.wp-easy-email .btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.wp-easy-email .btn-danger:active:hover,
+.wp-easy-email .btn-danger.active:hover,
+.open > .dropdown-toggle.wp-easy-email .btn-danger:hover,
+.wp-easy-email .btn-danger:active:focus,
+.wp-easy-email .btn-danger.active:focus,
+.open > .dropdown-toggle.wp-easy-email .btn-danger:focus,
+.wp-easy-email .btn-danger:active.focus,
+.wp-easy-email .btn-danger.active.focus,
+.open > .dropdown-toggle.wp-easy-email .btn-danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.wp-easy-email .btn-danger:active,
+.wp-easy-email .btn-danger.active,
+.open > .dropdown-toggle.wp-easy-email .btn-danger {
+  background-image: none;
+}
+.wp-easy-email .btn-danger.disabled:hover,
+.wp-easy-email .btn-danger[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-danger:hover,
+.wp-easy-email .btn-danger.disabled:focus,
+.wp-easy-email .btn-danger[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-danger:focus,
+.wp-easy-email .btn-danger.disabled.focus,
+.wp-easy-email .btn-danger[disabled].focus,
+fieldset[disabled] .wp-easy-email .btn-danger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.wp-easy-email .btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.wp-easy-email .btn-link {
+  color: #337ab7;
+  font-weight: normal;
+  border-radius: 0;
+}
+.wp-easy-email .btn-link,
+.wp-easy-email .btn-link:active,
+.wp-easy-email .btn-link.active,
+.wp-easy-email .btn-link[disabled],
+fieldset[disabled] .wp-easy-email .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wp-easy-email .btn-link,
+.wp-easy-email .btn-link:hover,
+.wp-easy-email .btn-link:focus,
+.wp-easy-email .btn-link:active {
+  border-color: transparent;
+}
+.wp-easy-email .btn-link:hover,
+.wp-easy-email .btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.wp-easy-email .btn-link[disabled]:hover,
+fieldset[disabled] .wp-easy-email .btn-link:hover,
+.wp-easy-email .btn-link[disabled]:focus,
+fieldset[disabled] .wp-easy-email .btn-link:focus {
+  color: #777777;
+  text-decoration: none;
+}
+.wp-easy-email .btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.wp-easy-email .btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.wp-easy-email .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.wp-easy-email .btn-block {
+  display: block;
+  width: 100%;
+}
+.wp-easy-email .btn-block + .btn-block {
+  margin-top: 5px;
+}
+.wp-easy-email input[type="submit"].btn-block,
+.wp-easy-email input[type="reset"].btn-block,
+.wp-easy-email input[type="button"].btn-block {
+  width: 100%;
+}
+.wp-easy-email .fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.wp-easy-email .fade.in {
+  opacity: 1;
+}
+.wp-easy-email .collapse {
+  display: none;
+}
+.wp-easy-email .collapse.in {
+  display: block;
+}
+tr.wp-easy-email .collapse.in {
+  display: table-row;
+}
+tbody.wp-easy-email .collapse.in {
+  display: table-row-group;
+}
+.wp-easy-email .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.wp-easy-email .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.wp-easy-email .dropup,
+.wp-easy-email .dropdown {
+  position: relative;
+}
+.wp-easy-email .dropdown-toggle:focus {
+  outline: 0;
+}
+.wp-easy-email .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.wp-easy-email .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.wp-easy-email .dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.wp-easy-email .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+.wp-easy-email .dropdown-menu > li > a:hover,
+.wp-easy-email .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.wp-easy-email .dropdown-menu > .active > a,
+.wp-easy-email .dropdown-menu > .active > a:hover,
+.wp-easy-email .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #337ab7;
+}
+.wp-easy-email .dropdown-menu > .disabled > a,
+.wp-easy-email .dropdown-menu > .disabled > a:hover,
+.wp-easy-email .dropdown-menu > .disabled > a:focus {
+  color: #777777;
+}
+.wp-easy-email .dropdown-menu > .disabled > a:hover,
+.wp-easy-email .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.wp-easy-email .open > .dropdown-menu {
+  display: block;
+}
+.wp-easy-email .open > a {
+  outline: 0;
+}
+.wp-easy-email .dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+.wp-easy-email .dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+.wp-easy-email .dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777777;
+  white-space: nowrap;
+}
+.wp-easy-email .dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+.wp-easy-email .pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.wp-easy-email .dropup .caret,
+.wp-easy-email .navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+  content: "";
+}
+.wp-easy-email .dropup .dropdown-menu,
+.wp-easy-email .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  .wp-easy-email .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto;
+  }
+}
+.wp-easy-email .btn-group,
+.wp-easy-email .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wp-easy-email .btn-group > .btn,
+.wp-easy-email .btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+.wp-easy-email .btn-group > .btn:hover,
+.wp-easy-email .btn-group-vertical > .btn:hover,
+.wp-easy-email .btn-group > .btn:focus,
+.wp-easy-email .btn-group-vertical > .btn:focus,
+.wp-easy-email .btn-group > .btn:active,
+.wp-easy-email .btn-group-vertical > .btn:active,
+.wp-easy-email .btn-group > .btn.active,
+.wp-easy-email .btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+.wp-easy-email .btn-group .btn + .btn,
+.wp-easy-email .btn-group .btn + .btn-group,
+.wp-easy-email .btn-group .btn-group + .btn,
+.wp-easy-email .btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+.wp-easy-email .btn-toolbar {
+  margin-left: -5px;
+}
+.wp-easy-email .btn-toolbar .btn,
+.wp-easy-email .btn-toolbar .btn-group,
+.wp-easy-email .btn-toolbar .input-group {
+  float: left;
+}
+.wp-easy-email .btn-toolbar > .btn,
+.wp-easy-email .btn-toolbar > .btn-group,
+.wp-easy-email .btn-toolbar > .input-group {
+  margin-left: 5px;
+}
+.wp-easy-email .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+}
+.wp-easy-email .btn-group > .btn:first-child {
+  margin-left: 0;
+}
+.wp-easy-email .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.wp-easy-email .btn-group > .btn:last-child:not(:first-child),
+.wp-easy-email .btn-group > .dropdown-toggle:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .btn-group > .btn-group {
+  float: left;
+}
+.wp-easy-email .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.wp-easy-email .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.wp-easy-email .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.wp-easy-email .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .btn-group .dropdown-toggle:active,
+.wp-easy-email .btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+.wp-easy-email .btn-group > .btn + .dropdown-toggle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.wp-easy-email .btn-group > .btn-lg + .dropdown-toggle {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.wp-easy-email .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.wp-easy-email .btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wp-easy-email .btn .caret {
+  margin-left: 0;
+}
+.wp-easy-email .btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
+.wp-easy-email .dropup .btn-lg .caret {
+  border-width: 0 5px 5px;
+}
+.wp-easy-email .btn-group-vertical > .btn,
+.wp-easy-email .btn-group-vertical > .btn-group,
+.wp-easy-email .btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+.wp-easy-email .btn-group-vertical > .btn-group > .btn {
+  float: none;
+}
+.wp-easy-email .btn-group-vertical > .btn + .btn,
+.wp-easy-email .btn-group-vertical > .btn + .btn-group,
+.wp-easy-email .btn-group-vertical > .btn-group + .btn,
+.wp-easy-email .btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+.wp-easy-email .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.wp-easy-email .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wp-easy-email .btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.wp-easy-email .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.wp-easy-email .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.wp-easy-email .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wp-easy-email .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.wp-easy-email .btn-group-justified > .btn,
+.wp-easy-email .btn-group-justified > .btn-group {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+.wp-easy-email .btn-group-justified > .btn-group .btn {
+  width: 100%;
+}
+.wp-easy-email .btn-group-justified > .btn-group .dropdown-menu {
+  left: auto;
+}
+.wp-easy-email [data-toggle="buttons"] > .btn input[type="radio"],
+.wp-easy-email [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+.wp-easy-email [data-toggle="buttons"] > .btn input[type="checkbox"],
+.wp-easy-email [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.wp-easy-email .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.wp-easy-email .input-group[class*="col-"] {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.wp-easy-email .input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.wp-easy-email .input-group .form-control:focus {
+  z-index: 3;
+}
+.wp-easy-email .input-group-lg > .form-control,
+.wp-easy-email .input-group-lg > .input-group-addon,
+.wp-easy-email .input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+select.wp-easy-email .input-group-lg > .form-control,
+select.wp-easy-email .input-group-lg > .input-group-addon,
+select.wp-easy-email .input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  line-height: 46px;
+}
+textarea.wp-easy-email .input-group-lg > .form-control,
+textarea.wp-easy-email .input-group-lg > .input-group-addon,
+textarea.wp-easy-email .input-group-lg > .input-group-btn > .btn,
+select[multiple].wp-easy-email .input-group-lg > .form-control,
+select[multiple].wp-easy-email .input-group-lg > .input-group-addon,
+select[multiple].wp-easy-email .input-group-lg > .input-group-btn > .btn {
+  height: auto;
+}
+.wp-easy-email .input-group-sm > .form-control,
+.wp-easy-email .input-group-sm > .input-group-addon,
+.wp-easy-email .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.wp-easy-email .input-group-sm > .form-control,
+select.wp-easy-email .input-group-sm > .input-group-addon,
+select.wp-easy-email .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.wp-easy-email .input-group-sm > .form-control,
+textarea.wp-easy-email .input-group-sm > .input-group-addon,
+textarea.wp-easy-email .input-group-sm > .input-group-btn > .btn,
+select[multiple].wp-easy-email .input-group-sm > .form-control,
+select[multiple].wp-easy-email .input-group-sm > .input-group-addon,
+select[multiple].wp-easy-email .input-group-sm > .input-group-btn > .btn {
+  height: auto;
+}
+.wp-easy-email .input-group-addon,
+.wp-easy-email .input-group-btn,
+.wp-easy-email .input-group .form-control {
+  display: table-cell;
+}
+.wp-easy-email .input-group-addon:not(:first-child):not(:last-child),
+.wp-easy-email .input-group-btn:not(:first-child):not(:last-child),
+.wp-easy-email .input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.wp-easy-email .input-group-addon,
+.wp-easy-email .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.wp-easy-email .input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555555;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.wp-easy-email .input-group-addon.input-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.wp-easy-email .input-group-addon.input-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.wp-easy-email .input-group-addon input[type="radio"],
+.wp-easy-email .input-group-addon input[type="checkbox"] {
+  margin-top: 0;
+}
+.wp-easy-email .input-group .form-control:first-child,
+.wp-easy-email .input-group-addon:first-child,
+.wp-easy-email .input-group-btn:first-child > .btn,
+.wp-easy-email .input-group-btn:first-child > .btn-group > .btn,
+.wp-easy-email .input-group-btn:first-child > .dropdown-toggle,
+.wp-easy-email .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.wp-easy-email .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.wp-easy-email .input-group-addon:first-child {
+  border-right: 0;
+}
+.wp-easy-email .input-group .form-control:last-child,
+.wp-easy-email .input-group-addon:last-child,
+.wp-easy-email .input-group-btn:last-child > .btn,
+.wp-easy-email .input-group-btn:last-child > .btn-group > .btn,
+.wp-easy-email .input-group-btn:last-child > .dropdown-toggle,
+.wp-easy-email .input-group-btn:first-child > .btn:not(:first-child),
+.wp-easy-email .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .input-group-addon:last-child {
+  border-left: 0;
+}
+.wp-easy-email .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.wp-easy-email .input-group-btn > .btn {
+  position: relative;
+}
+.wp-easy-email .input-group-btn > .btn + .btn {
+  margin-left: -1px;
+}
+.wp-easy-email .input-group-btn > .btn:hover,
+.wp-easy-email .input-group-btn > .btn:focus,
+.wp-easy-email .input-group-btn > .btn:active {
+  z-index: 2;
+}
+.wp-easy-email .input-group-btn:first-child > .btn,
+.wp-easy-email .input-group-btn:first-child > .btn-group {
+  margin-right: -1px;
+}
+.wp-easy-email .input-group-btn:last-child > .btn,
+.wp-easy-email .input-group-btn:last-child > .btn-group {
+  z-index: 2;
+  margin-left: -1px;
+}
+.wp-easy-email .nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.wp-easy-email .nav > li {
+  position: relative;
+  display: block;
+}
+.wp-easy-email .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.wp-easy-email .nav > li > a:hover,
+.wp-easy-email .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.wp-easy-email .nav > li.disabled > a {
+  color: #777777;
+}
+.wp-easy-email .nav > li.disabled > a:hover,
+.wp-easy-email .nav > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.wp-easy-email .nav .open > a,
+.wp-easy-email .nav .open > a:hover,
+.wp-easy-email .nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #337ab7;
+}
+.wp-easy-email .nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.wp-easy-email .nav > li > a > img {
+  max-width: none;
+}
+.wp-easy-email .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.wp-easy-email .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.wp-easy-email .nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.wp-easy-email .nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #ddd;
+}
+.wp-easy-email .nav-tabs > li.active > a,
+.wp-easy-email .nav-tabs > li.active > a:hover,
+.wp-easy-email .nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.wp-easy-email .nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wp-easy-email .nav-tabs.nav-justified > li {
+  float: none;
+}
+.wp-easy-email .nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.wp-easy-email .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wp-easy-email .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wp-easy-email .nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wp-easy-email .nav-tabs.nav-justified > .active > a,
+.wp-easy-email .nav-tabs.nav-justified > .active > a:hover,
+.wp-easy-email .nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wp-easy-email .nav-tabs.nav-justified > .active > a,
+  .wp-easy-email .nav-tabs.nav-justified > .active > a:hover,
+  .wp-easy-email .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.wp-easy-email .nav-pills > li {
+  float: left;
+}
+.wp-easy-email .nav-pills > li > a {
+  border-radius: 4px;
+}
+.wp-easy-email .nav-pills > li + li {
+  margin-left: 2px;
+}
+.wp-easy-email .nav-pills > li.active > a,
+.wp-easy-email .nav-pills > li.active > a:hover,
+.wp-easy-email .nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #337ab7;
+}
+.wp-easy-email .nav-stacked > li {
+  float: none;
+}
+.wp-easy-email .nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+.wp-easy-email .nav-justified {
+  width: 100%;
+}
+.wp-easy-email .nav-justified > li {
+  float: none;
+}
+.wp-easy-email .nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.wp-easy-email .nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wp-easy-email .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wp-easy-email .nav-tabs-justified {
+  border-bottom: 0;
+}
+.wp-easy-email .nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wp-easy-email .nav-tabs-justified > .active > a,
+.wp-easy-email .nav-tabs-justified > .active > a:hover,
+.wp-easy-email .nav-tabs-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wp-easy-email .nav-tabs-justified > .active > a,
+  .wp-easy-email .nav-tabs-justified > .active > a:hover,
+  .wp-easy-email .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.wp-easy-email .tab-content > .tab-pane {
+  display: none;
+}
+.wp-easy-email .tab-content > .active {
+  display: block;
+}
+.wp-easy-email .nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar {
+    border-radius: 4px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-header {
+    float: left;
+  }
+}
+.wp-easy-email .navbar-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+.wp-easy-email .navbar-collapse.in {
+  overflow-y: auto;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .wp-easy-email .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .wp-easy-email .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-fixed-top .wp-easy-email .navbar-collapse,
+  .navbar-static-top .wp-easy-email .navbar-collapse,
+  .navbar-fixed-bottom .wp-easy-email .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.wp-easy-email .navbar-fixed-top .navbar-collapse,
+.wp-easy-email .navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px;
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .wp-easy-email .navbar-fixed-top .navbar-collapse,
+  .wp-easy-email .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+.wp-easy-email .container > .navbar-header,
+.wp-easy-email .container-fluid > .navbar-header,
+.wp-easy-email .container > .navbar-collapse,
+.wp-easy-email .container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .container > .navbar-header,
+  .wp-easy-email .container-fluid > .navbar-header,
+  .wp-easy-email .container > .navbar-collapse,
+  .wp-easy-email .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.wp-easy-email .navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-static-top {
+    border-radius: 0;
+  }
+}
+.wp-easy-email .navbar-fixed-top,
+.wp-easy-email .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-fixed-top,
+  .wp-easy-email .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+.wp-easy-email .navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.wp-easy-email .navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+.wp-easy-email .navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+.wp-easy-email .navbar-brand:hover,
+.wp-easy-email .navbar-brand:focus {
+  text-decoration: none;
+}
+.wp-easy-email .navbar-brand > img {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navbar > .container .wp-easy-email .navbar-brand,
+  .navbar > .container-fluid .wp-easy-email .navbar-brand {
+    margin-left: -15px;
+  }
+}
+.wp-easy-email .navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.wp-easy-email .navbar-toggle:focus {
+  outline: 0;
+}
+.wp-easy-email .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.wp-easy-email .navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-toggle {
+    display: none;
+  }
+}
+.wp-easy-email .navbar-nav {
+  margin: 7.5px -15px;
+}
+.wp-easy-email .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  .wp-easy-email .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .wp-easy-email .navbar-nav .open .dropdown-menu > li > a,
+  .wp-easy-email .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .wp-easy-email .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .wp-easy-email .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wp-easy-email .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .wp-easy-email .navbar-nav > li {
+    float: left;
+  }
+  .wp-easy-email .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.wp-easy-email .navbar-form {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .wp-easy-email .navbar-form .form-control-static {
+    display: inline-block;
+  }
+  .wp-easy-email .navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .wp-easy-email .navbar-form .input-group .input-group-addon,
+  .wp-easy-email .navbar-form .input-group .input-group-btn,
+  .wp-easy-email .navbar-form .input-group .form-control {
+    width: auto;
+  }
+  .wp-easy-email .navbar-form .input-group > .form-control {
+    width: 100%;
+  }
+  .wp-easy-email .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .navbar-form .radio,
+  .wp-easy-email .navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .wp-easy-email .navbar-form .radio label,
+  .wp-easy-email .navbar-form .checkbox label {
+    padding-left: 0;
+  }
+  .wp-easy-email .navbar-form .radio input[type="radio"],
+  .wp-easy-email .navbar-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .wp-easy-email .navbar-form .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .wp-easy-email .navbar-form .form-group {
+    margin-bottom: 5px;
+  }
+  .wp-easy-email .navbar-form .form-group:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+.wp-easy-email .navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wp-easy-email .navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.wp-easy-email .navbar-btn.btn-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wp-easy-email .navbar-btn.btn-xs {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.wp-easy-email .navbar-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-text {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-easy-email .navbar-left {
+    float: left !important;
+  }
+  .wp-easy-email .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .wp-easy-email .navbar-right ~ .navbar-right {
+    margin-right: 0;
+  }
+}
+.wp-easy-email .navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.wp-easy-email .navbar-default .navbar-brand {
+  color: #777;
+}
+.wp-easy-email .navbar-default .navbar-brand:hover,
+.wp-easy-email .navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-default .navbar-text {
+  color: #777;
+}
+.wp-easy-email .navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+.wp-easy-email .navbar-default .navbar-nav > li > a:hover,
+.wp-easy-email .navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-default .navbar-nav > .active > a,
+.wp-easy-email .navbar-default .navbar-nav > .active > a:hover,
+.wp-easy-email .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.wp-easy-email .navbar-default .navbar-nav > .disabled > a,
+.wp-easy-email .navbar-default .navbar-nav > .disabled > a:hover,
+.wp-easy-email .navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.wp-easy-email .navbar-default .navbar-toggle:hover,
+.wp-easy-email .navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wp-easy-email .navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wp-easy-email .navbar-default .navbar-collapse,
+.wp-easy-email .navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.wp-easy-email .navbar-default .navbar-nav > .open > a,
+.wp-easy-email .navbar-default .navbar-nav > .open > a:hover,
+.wp-easy-email .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555;
+}
+@media (max-width: 767px) {
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wp-easy-email .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.wp-easy-email .navbar-default .navbar-link {
+  color: #777;
+}
+.wp-easy-email .navbar-default .navbar-link:hover {
+  color: #333;
+}
+.wp-easy-email .navbar-default .btn-link {
+  color: #777;
+}
+.wp-easy-email .navbar-default .btn-link:hover,
+.wp-easy-email .navbar-default .btn-link:focus {
+  color: #333;
+}
+.wp-easy-email .navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .wp-easy-email .navbar-default .btn-link:hover,
+.wp-easy-email .navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .wp-easy-email .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+.wp-easy-email .navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+.wp-easy-email .navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+.wp-easy-email .navbar-inverse .navbar-brand:hover,
+.wp-easy-email .navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-inverse .navbar-text {
+  color: #9d9d9d;
+}
+.wp-easy-email .navbar-inverse .navbar-nav > li > a {
+  color: #9d9d9d;
+}
+.wp-easy-email .navbar-inverse .navbar-nav > li > a:hover,
+.wp-easy-email .navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-inverse .navbar-nav > .active > a,
+.wp-easy-email .navbar-inverse .navbar-nav > .active > a:hover,
+.wp-easy-email .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.wp-easy-email .navbar-inverse .navbar-nav > .disabled > a,
+.wp-easy-email .navbar-inverse .navbar-nav > .disabled > a:hover,
+.wp-easy-email .navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.wp-easy-email .navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+.wp-easy-email .navbar-inverse .navbar-toggle:hover,
+.wp-easy-email .navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+.wp-easy-email .navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.wp-easy-email .navbar-inverse .navbar-collapse,
+.wp-easy-email .navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+.wp-easy-email .navbar-inverse .navbar-nav > .open > a,
+.wp-easy-email .navbar-inverse .navbar-nav > .open > a:hover,
+.wp-easy-email .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #080808;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d;
+  }
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wp-easy-email .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+}
+.wp-easy-email .navbar-inverse .navbar-link {
+  color: #9d9d9d;
+}
+.wp-easy-email .navbar-inverse .navbar-link:hover {
+  color: #fff;
+}
+.wp-easy-email .navbar-inverse .btn-link {
+  color: #9d9d9d;
+}
+.wp-easy-email .navbar-inverse .btn-link:hover,
+.wp-easy-email .navbar-inverse .btn-link:focus {
+  color: #fff;
+}
+.wp-easy-email .navbar-inverse .btn-link[disabled]:hover,
+fieldset[disabled] .wp-easy-email .navbar-inverse .btn-link:hover,
+.wp-easy-email .navbar-inverse .btn-link[disabled]:focus,
+fieldset[disabled] .wp-easy-email .navbar-inverse .btn-link:focus {
+  color: #444;
+}
+.wp-easy-email .breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.wp-easy-email .breadcrumb > li {
+  display: inline-block;
+}
+.wp-easy-email .breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #ccc;
+}
+.wp-easy-email .breadcrumb > .active {
+  color: #777777;
+}
+.wp-easy-email .pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.wp-easy-email .pagination > li {
+  display: inline;
+}
+.wp-easy-email .pagination > li > a,
+.wp-easy-email .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+.wp-easy-email .pagination > li:first-child > a,
+.wp-easy-email .pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.wp-easy-email .pagination > li:last-child > a,
+.wp-easy-email .pagination > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.wp-easy-email .pagination > li > a:hover,
+.wp-easy-email .pagination > li > span:hover,
+.wp-easy-email .pagination > li > a:focus,
+.wp-easy-email .pagination > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eeeeee;
+  border-color: #ddd;
+}
+.wp-easy-email .pagination > .active > a,
+.wp-easy-email .pagination > .active > span,
+.wp-easy-email .pagination > .active > a:hover,
+.wp-easy-email .pagination > .active > span:hover,
+.wp-easy-email .pagination > .active > a:focus,
+.wp-easy-email .pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+.wp-easy-email .pagination > .disabled > span,
+.wp-easy-email .pagination > .disabled > span:hover,
+.wp-easy-email .pagination > .disabled > span:focus,
+.wp-easy-email .pagination > .disabled > a,
+.wp-easy-email .pagination > .disabled > a:hover,
+.wp-easy-email .pagination > .disabled > a:focus {
+  color: #777777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+.wp-easy-email .pagination-lg > li > a,
+.wp-easy-email .pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.wp-easy-email .pagination-lg > li:first-child > a,
+.wp-easy-email .pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.wp-easy-email .pagination-lg > li:last-child > a,
+.wp-easy-email .pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.wp-easy-email .pagination-sm > li > a,
+.wp-easy-email .pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.wp-easy-email .pagination-sm > li:first-child > a,
+.wp-easy-email .pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.wp-easy-email .pagination-sm > li:last-child > a,
+.wp-easy-email .pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wp-easy-email .pager {
+  padding-left: 0;
+  margin: 20px 0;
+  list-style: none;
+  text-align: center;
+}
+.wp-easy-email .pager li {
+  display: inline;
+}
+.wp-easy-email .pager li > a,
+.wp-easy-email .pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.wp-easy-email .pager li > a:hover,
+.wp-easy-email .pager li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.wp-easy-email .pager .next > a,
+.wp-easy-email .pager .next > span {
+  float: right;
+}
+.wp-easy-email .pager .previous > a,
+.wp-easy-email .pager .previous > span {
+  float: left;
+}
+.wp-easy-email .pager .disabled > a,
+.wp-easy-email .pager .disabled > a:hover,
+.wp-easy-email .pager .disabled > a:focus,
+.wp-easy-email .pager .disabled > span {
+  color: #777777;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.wp-easy-email .label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+a.wp-easy-email .label:hover,
+a.wp-easy-email .label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wp-easy-email .label:empty {
+  display: none;
+}
+.btn .wp-easy-email .label {
+  position: relative;
+  top: -1px;
+}
+.wp-easy-email .label-default {
+  background-color: #777777;
+}
+.wp-easy-email .label-default[href]:hover,
+.wp-easy-email .label-default[href]:focus {
+  background-color: #5e5e5e;
+}
+.wp-easy-email .label-primary {
+  background-color: #337ab7;
+}
+.wp-easy-email .label-primary[href]:hover,
+.wp-easy-email .label-primary[href]:focus {
+  background-color: #286090;
+}
+.wp-easy-email .label-success {
+  background-color: #5cb85c;
+}
+.wp-easy-email .label-success[href]:hover,
+.wp-easy-email .label-success[href]:focus {
+  background-color: #449d44;
+}
+.wp-easy-email .label-info {
+  background-color: #5bc0de;
+}
+.wp-easy-email .label-info[href]:hover,
+.wp-easy-email .label-info[href]:focus {
+  background-color: #31b0d5;
+}
+.wp-easy-email .label-warning {
+  background-color: #f0ad4e;
+}
+.wp-easy-email .label-warning[href]:hover,
+.wp-easy-email .label-warning[href]:focus {
+  background-color: #ec971f;
+}
+.wp-easy-email .label-danger {
+  background-color: #d9534f;
+}
+.wp-easy-email .label-danger[href]:hover,
+.wp-easy-email .label-danger[href]:focus {
+  background-color: #c9302c;
+}
+.wp-easy-email .badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+}
+.wp-easy-email .badge:empty {
+  display: none;
+}
+.btn .wp-easy-email .badge {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .wp-easy-email .badge,
+.btn-group-xs > .btn .wp-easy-email .badge {
+  top: 0;
+  padding: 1px 5px;
+}
+a.wp-easy-email .badge:hover,
+a.wp-easy-email .badge:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .wp-easy-email .badge,
+.nav-pills > .active > a > .wp-easy-email .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.list-group-item > .wp-easy-email .badge {
+  float: right;
+}
+.list-group-item > .wp-easy-email .badge + .wp-easy-email .badge {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .wp-easy-email .badge {
+  margin-left: 3px;
+}
+.wp-easy-email .jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+.wp-easy-email .jumbotron h1,
+.wp-easy-email .jumbotron .h1 {
+  color: inherit;
+}
+.wp-easy-email .jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.wp-easy-email .jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .wp-easy-email .jumbotron,
+.container-fluid .wp-easy-email .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wp-easy-email .jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .wp-easy-email .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .wp-easy-email .jumbotron,
+  .container-fluid .wp-easy-email .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .wp-easy-email .jumbotron h1,
+  .wp-easy-email .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+.wp-easy-email .thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.wp-easy-email .thumbnail > img,
+.wp-easy-email .thumbnail a > img {
+  margin-left: auto;
+  margin-right: auto;
+}
+a.wp-easy-email .thumbnail:hover,
+a.wp-easy-email .thumbnail:focus,
+a.wp-easy-email .thumbnail.active {
+  border-color: #337ab7;
+}
+.wp-easy-email .thumbnail .caption {
+  padding: 9px;
+  color: #333333;
+}
+.wp-easy-email .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.wp-easy-email .alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.wp-easy-email .alert .alert-link {
+  font-weight: bold;
+}
+.wp-easy-email .alert > p,
+.wp-easy-email .alert > ul {
+  margin-bottom: 0;
+}
+.wp-easy-email .alert > p + p {
+  margin-top: 5px;
+}
+.wp-easy-email .alert-dismissable,
+.wp-easy-email .alert-dismissible {
+  padding-right: 35px;
+}
+.wp-easy-email .alert-dismissable .close,
+.wp-easy-email .alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.wp-easy-email .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+.wp-easy-email .alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.wp-easy-email .alert-success .alert-link {
+  color: #2b542c;
+}
+.wp-easy-email .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+}
+.wp-easy-email .alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.wp-easy-email .alert-info .alert-link {
+  color: #245269;
+}
+.wp-easy-email .alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+.wp-easy-email .alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.wp-easy-email .alert-warning .alert-link {
+  color: #66512c;
+}
+.wp-easy-email .alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.wp-easy-email .alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.wp-easy-email .alert-danger .alert-link {
+  color: #843534;
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.wp-easy-email .progress {
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.wp-easy-email .progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.wp-easy-email .progress-striped .progress-bar,
+.wp-easy-email .progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+.wp-easy-email .progress.active .progress-bar,
+.wp-easy-email .progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.wp-easy-email .progress-bar-success {
+  background-color: #5cb85c;
+}
+.progress-striped .wp-easy-email .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wp-easy-email .progress-bar-info {
+  background-color: #5bc0de;
+}
+.progress-striped .wp-easy-email .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wp-easy-email .progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-striped .wp-easy-email .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wp-easy-email .progress-bar-danger {
+  background-color: #d9534f;
+}
+.progress-striped .wp-easy-email .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wp-easy-email .media {
+  margin-top: 15px;
+}
+.wp-easy-email .media:first-child {
+  margin-top: 0;
+}
+.wp-easy-email .media,
+.wp-easy-email .media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+.wp-easy-email .media-body {
+  width: 10000px;
+}
+.wp-easy-email .media-object {
+  display: block;
+}
+.wp-easy-email .media-object.img-thumbnail {
+  max-width: none;
+}
+.wp-easy-email .media-right,
+.wp-easy-email .media > .pull-right {
+  padding-left: 10px;
+}
+.wp-easy-email .media-left,
+.wp-easy-email .media > .pull-left {
+  padding-right: 10px;
+}
+.wp-easy-email .media-left,
+.wp-easy-email .media-right,
+.wp-easy-email .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.wp-easy-email .media-middle {
+  vertical-align: middle;
+}
+.wp-easy-email .media-bottom {
+  vertical-align: bottom;
+}
+.wp-easy-email .media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.wp-easy-email .media-list {
+  padding-left: 0;
+  list-style: none;
+}
+.wp-easy-email .list-group {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.wp-easy-email .list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.wp-easy-email .list-group-item:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.wp-easy-email .list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.wp-easy-email a.list-group-item,
+.wp-easy-email button.list-group-item {
+  color: #555;
+}
+.wp-easy-email a.list-group-item .list-group-item-heading,
+.wp-easy-email button.list-group-item .list-group-item-heading {
+  color: #333;
+}
+.wp-easy-email a.list-group-item:hover,
+.wp-easy-email button.list-group-item:hover,
+.wp-easy-email a.list-group-item:focus,
+.wp-easy-email button.list-group-item:focus {
+  text-decoration: none;
+  color: #555;
+  background-color: #f5f5f5;
+}
+.wp-easy-email button.list-group-item {
+  width: 100%;
+  text-align: left;
+}
+.wp-easy-email .list-group-item.disabled,
+.wp-easy-email .list-group-item.disabled:hover,
+.wp-easy-email .list-group-item.disabled:focus {
+  background-color: #eeeeee;
+  color: #777777;
+  cursor: not-allowed;
+}
+.wp-easy-email .list-group-item.disabled .list-group-item-heading,
+.wp-easy-email .list-group-item.disabled:hover .list-group-item-heading,
+.wp-easy-email .list-group-item.disabled:focus .list-group-item-heading {
+  color: inherit;
+}
+.wp-easy-email .list-group-item.disabled .list-group-item-text,
+.wp-easy-email .list-group-item.disabled:hover .list-group-item-text,
+.wp-easy-email .list-group-item.disabled:focus .list-group-item-text {
+  color: #777777;
+}
+.wp-easy-email .list-group-item.active,
+.wp-easy-email .list-group-item.active:hover,
+.wp-easy-email .list-group-item.active:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.wp-easy-email .list-group-item.active .list-group-item-heading,
+.wp-easy-email .list-group-item.active:hover .list-group-item-heading,
+.wp-easy-email .list-group-item.active:focus .list-group-item-heading,
+.wp-easy-email .list-group-item.active .list-group-item-heading > small,
+.wp-easy-email .list-group-item.active:hover .list-group-item-heading > small,
+.wp-easy-email .list-group-item.active:focus .list-group-item-heading > small,
+.wp-easy-email .list-group-item.active .list-group-item-heading > .small,
+.wp-easy-email .list-group-item.active:hover .list-group-item-heading > .small,
+.wp-easy-email .list-group-item.active:focus .list-group-item-heading > .small {
+  color: inherit;
+}
+.wp-easy-email .list-group-item.active .list-group-item-text,
+.wp-easy-email .list-group-item.active:hover .list-group-item-text,
+.wp-easy-email .list-group-item.active:focus .list-group-item-text {
+  color: #c7ddef;
+}
+.wp-easy-email .list-group-item-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+a.wp-easy-email .list-group-item-success,
+button.wp-easy-email .list-group-item-success {
+  color: #3c763d;
+}
+a.wp-easy-email .list-group-item-success .list-group-item-heading,
+button.wp-easy-email .list-group-item-success .list-group-item-heading {
+  color: inherit;
+}
+a.wp-easy-email .list-group-item-success:hover,
+button.wp-easy-email .list-group-item-success:hover,
+a.wp-easy-email .list-group-item-success:focus,
+button.wp-easy-email .list-group-item-success:focus {
+  color: #3c763d;
+  background-color: #d0e9c6;
+}
+a.wp-easy-email .list-group-item-success.active,
+button.wp-easy-email .list-group-item-success.active,
+a.wp-easy-email .list-group-item-success.active:hover,
+button.wp-easy-email .list-group-item-success.active:hover,
+a.wp-easy-email .list-group-item-success.active:focus,
+button.wp-easy-email .list-group-item-success.active:focus {
+  color: #fff;
+  background-color: #3c763d;
+  border-color: #3c763d;
+}
+.wp-easy-email .list-group-item-info {
+  color: #31708f;
+  background-color: #d9edf7;
+}
+a.wp-easy-email .list-group-item-info,
+button.wp-easy-email .list-group-item-info {
+  color: #31708f;
+}
+a.wp-easy-email .list-group-item-info .list-group-item-heading,
+button.wp-easy-email .list-group-item-info .list-group-item-heading {
+  color: inherit;
+}
+a.wp-easy-email .list-group-item-info:hover,
+button.wp-easy-email .list-group-item-info:hover,
+a.wp-easy-email .list-group-item-info:focus,
+button.wp-easy-email .list-group-item-info:focus {
+  color: #31708f;
+  background-color: #c4e3f3;
+}
+a.wp-easy-email .list-group-item-info.active,
+button.wp-easy-email .list-group-item-info.active,
+a.wp-easy-email .list-group-item-info.active:hover,
+button.wp-easy-email .list-group-item-info.active:hover,
+a.wp-easy-email .list-group-item-info.active:focus,
+button.wp-easy-email .list-group-item-info.active:focus {
+  color: #fff;
+  background-color: #31708f;
+  border-color: #31708f;
+}
+.wp-easy-email .list-group-item-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+a.wp-easy-email .list-group-item-warning,
+button.wp-easy-email .list-group-item-warning {
+  color: #8a6d3b;
+}
+a.wp-easy-email .list-group-item-warning .list-group-item-heading,
+button.wp-easy-email .list-group-item-warning .list-group-item-heading {
+  color: inherit;
+}
+a.wp-easy-email .list-group-item-warning:hover,
+button.wp-easy-email .list-group-item-warning:hover,
+a.wp-easy-email .list-group-item-warning:focus,
+button.wp-easy-email .list-group-item-warning:focus {
+  color: #8a6d3b;
+  background-color: #faf2cc;
+}
+a.wp-easy-email .list-group-item-warning.active,
+button.wp-easy-email .list-group-item-warning.active,
+a.wp-easy-email .list-group-item-warning.active:hover,
+button.wp-easy-email .list-group-item-warning.active:hover,
+a.wp-easy-email .list-group-item-warning.active:focus,
+button.wp-easy-email .list-group-item-warning.active:focus {
+  color: #fff;
+  background-color: #8a6d3b;
+  border-color: #8a6d3b;
+}
+.wp-easy-email .list-group-item-danger {
+  color: #a94442;
+  background-color: #f2dede;
+}
+a.wp-easy-email .list-group-item-danger,
+button.wp-easy-email .list-group-item-danger {
+  color: #a94442;
+}
+a.wp-easy-email .list-group-item-danger .list-group-item-heading,
+button.wp-easy-email .list-group-item-danger .list-group-item-heading {
+  color: inherit;
+}
+a.wp-easy-email .list-group-item-danger:hover,
+button.wp-easy-email .list-group-item-danger:hover,
+a.wp-easy-email .list-group-item-danger:focus,
+button.wp-easy-email .list-group-item-danger:focus {
+  color: #a94442;
+  background-color: #ebcccc;
+}
+a.wp-easy-email .list-group-item-danger.active,
+button.wp-easy-email .list-group-item-danger.active,
+a.wp-easy-email .list-group-item-danger.active:hover,
+button.wp-easy-email .list-group-item-danger.active:hover,
+a.wp-easy-email .list-group-item-danger.active:focus,
+button.wp-easy-email .list-group-item-danger.active:focus {
+  color: #fff;
+  background-color: #a94442;
+  border-color: #a94442;
+}
+.wp-easy-email .list-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.wp-easy-email .list-group-item-text {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+.wp-easy-email .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.wp-easy-email .panel-body {
+  padding: 15px;
+}
+.wp-easy-email .panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.wp-easy-email .panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.wp-easy-email .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.wp-easy-email .panel-title > a,
+.wp-easy-email .panel-title > small,
+.wp-easy-email .panel-title > .small,
+.wp-easy-email .panel-title > small > a,
+.wp-easy-email .panel-title > .small > a {
+  color: inherit;
+}
+.wp-easy-email .panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wp-easy-email .panel > .list-group,
+.wp-easy-email .panel > .panel-collapse > .list-group {
+  margin-bottom: 0;
+}
+.wp-easy-email .panel > .list-group .list-group-item,
+.wp-easy-email .panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+.wp-easy-email .panel > .list-group:first-child .list-group-item:first-child,
+.wp-easy-email .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.wp-easy-email .panel > .list-group:last-child .list-group-item:last-child,
+.wp-easy-email .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wp-easy-email .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.wp-easy-email .panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+.wp-easy-email .list-group + .panel-footer {
+  border-top-width: 0;
+}
+.wp-easy-email .panel > .table,
+.wp-easy-email .panel > .table-responsive > .table,
+.wp-easy-email .panel > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+.wp-easy-email .panel > .table caption,
+.wp-easy-email .panel > .table-responsive > .table caption,
+.wp-easy-email .panel > .panel-collapse > .table caption {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wp-easy-email .panel > .table:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.wp-easy-email .panel > .table:first-child > thead:first-child > tr:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.wp-easy-email .panel > .table:first-child > tbody:first-child > tr:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.wp-easy-email .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.wp-easy-email .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.wp-easy-email .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.wp-easy-email .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+.wp-easy-email .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.wp-easy-email .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.wp-easy-email .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.wp-easy-email .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.wp-easy-email .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+.wp-easy-email .panel > .table:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wp-easy-email .panel > .table:last-child > tbody:last-child > tr:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.wp-easy-email .panel > .table:last-child > tfoot:last-child > tr:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wp-easy-email .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.wp-easy-email .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.wp-easy-email .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.wp-easy-email .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 3px;
+}
+.wp-easy-email .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.wp-easy-email .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.wp-easy-email .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.wp-easy-email .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.wp-easy-email .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: 3px;
+}
+.wp-easy-email .panel > .panel-body + .table,
+.wp-easy-email .panel > .panel-body + .table-responsive,
+.wp-easy-email .panel > .table + .panel-body,
+.wp-easy-email .panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
+}
+.wp-easy-email .panel > .table > tbody:first-child > tr:first-child th,
+.wp-easy-email .panel > .table > tbody:first-child > tr:first-child td {
+  border-top: 0;
+}
+.wp-easy-email .panel > .table-bordered,
+.wp-easy-email .panel > .table-responsive > .table-bordered {
+  border: 0;
+}
+.wp-easy-email .panel > .table-bordered > thead > tr > th:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.wp-easy-email .panel > .table-bordered > tbody > tr > th:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.wp-easy-email .panel > .table-bordered > tfoot > tr > th:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.wp-easy-email .panel > .table-bordered > thead > tr > td:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.wp-easy-email .panel > .table-bordered > tbody > tr > td:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.wp-easy-email .panel > .table-bordered > tfoot > tr > td:first-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.wp-easy-email .panel > .table-bordered > thead > tr > th:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.wp-easy-email .panel > .table-bordered > tbody > tr > th:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.wp-easy-email .panel > .table-bordered > tfoot > tr > th:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.wp-easy-email .panel > .table-bordered > thead > tr > td:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.wp-easy-email .panel > .table-bordered > tbody > tr > td:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.wp-easy-email .panel > .table-bordered > tfoot > tr > td:last-child,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.wp-easy-email .panel > .table-bordered > thead > tr:first-child > td,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.wp-easy-email .panel > .table-bordered > tbody > tr:first-child > td,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.wp-easy-email .panel > .table-bordered > thead > tr:first-child > th,
+.wp-easy-email .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.wp-easy-email .panel > .table-bordered > tbody > tr:first-child > th,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+  border-bottom: 0;
+}
+.wp-easy-email .panel > .table-bordered > tbody > tr:last-child > td,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.wp-easy-email .panel > .table-bordered > tfoot > tr:last-child > td,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.wp-easy-email .panel > .table-bordered > tbody > tr:last-child > th,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.wp-easy-email .panel > .table-bordered > tfoot > tr:last-child > th,
+.wp-easy-email .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+  border-bottom: 0;
+}
+.wp-easy-email .panel > .table-responsive {
+  border: 0;
+  margin-bottom: 0;
+}
+.wp-easy-email .panel-group {
+  margin-bottom: 20px;
+}
+.wp-easy-email .panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.wp-easy-email .panel-group .panel + .panel {
+  margin-top: 5px;
+}
+.wp-easy-email .panel-group .panel-heading {
+  border-bottom: 0;
+}
+.wp-easy-email .panel-group .panel-heading + .panel-collapse > .panel-body,
+.wp-easy-email .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #ddd;
+}
+.wp-easy-email .panel-group .panel-footer {
+  border-top: 0;
+}
+.wp-easy-email .panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+.wp-easy-email .panel-default {
+  border-color: #ddd;
+}
+.wp-easy-email .panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.wp-easy-email .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.wp-easy-email .panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333333;
+}
+.wp-easy-email .panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+.wp-easy-email .panel-primary {
+  border-color: #337ab7;
+}
+.wp-easy-email .panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.wp-easy-email .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #337ab7;
+}
+.wp-easy-email .panel-primary > .panel-heading .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.wp-easy-email .panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #337ab7;
+}
+.wp-easy-email .panel-success {
+  border-color: #d6e9c6;
+}
+.wp-easy-email .panel-success > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.wp-easy-email .panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+.wp-easy-email .panel-success > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.wp-easy-email .panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+.wp-easy-email .panel-info {
+  border-color: #bce8f1;
+}
+.wp-easy-email .panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.wp-easy-email .panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+.wp-easy-email .panel-info > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.wp-easy-email .panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+.wp-easy-email .panel-warning {
+  border-color: #faebcc;
+}
+.wp-easy-email .panel-warning > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.wp-easy-email .panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+.wp-easy-email .panel-warning > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+.wp-easy-email .panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+.wp-easy-email .panel-danger {
+  border-color: #ebccd1;
+}
+.wp-easy-email .panel-danger > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.wp-easy-email .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+.wp-easy-email .panel-danger > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+.wp-easy-email .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
+}
+.wp-easy-email .embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wp-easy-email .embed-responsive .embed-responsive-item,
+.wp-easy-email .embed-responsive iframe,
+.wp-easy-email .embed-responsive embed,
+.wp-easy-email .embed-responsive object,
+.wp-easy-email .embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.wp-easy-email .embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.wp-easy-email .embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+.wp-easy-email .well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.wp-easy-email .well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.wp-easy-email .well-lg {
+  padding: 24px;
+  border-radius: 6px;
+}
+.wp-easy-email .well-sm {
+  padding: 9px;
+  border-radius: 3px;
+}
+.wp-easy-email .close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.wp-easy-email .close:hover,
+.wp-easy-email .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.wp-easy-email .close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.wp-easy-email .modal-open {
+  overflow: hidden;
+}
+.wp-easy-email .modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.wp-easy-email .modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.wp-easy-email .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.wp-easy-email .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.wp-easy-email .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.wp-easy-email .modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+.wp-easy-email .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.wp-easy-email .modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.wp-easy-email .modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.wp-easy-email .modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.wp-easy-email .modal-header .close {
+  margin-top: -2px;
+}
+.wp-easy-email .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.wp-easy-email .modal-body {
+  position: relative;
+  padding: 15px;
+}
+.wp-easy-email .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.wp-easy-email .modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.wp-easy-email .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.wp-easy-email .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.wp-easy-email .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .wp-easy-email .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .wp-easy-email .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .wp-easy-email .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-easy-email .modal-lg {
+    width: 900px;
+  }
+}
+.wp-easy-email .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.wp-easy-email .tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.wp-easy-email .tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.wp-easy-email .tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.wp-easy-email .tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.wp-easy-email .tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.wp-easy-email .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
+.wp-easy-email .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.wp-easy-email .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.wp-easy-email .tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.wp-easy-email .tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.wp-easy-email .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+.wp-easy-email .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+.wp-easy-email .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.wp-easy-email .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.wp-easy-email .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.wp-easy-email .popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 14px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wp-easy-email .popover.top {
+  margin-top: -10px;
+}
+.wp-easy-email .popover.right {
+  margin-left: 10px;
+}
+.wp-easy-email .popover.bottom {
+  margin-top: 10px;
+}
+.wp-easy-email .popover.left {
+  margin-left: -10px;
+}
+.wp-easy-email .popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+.wp-easy-email .popover-content {
+  padding: 9px 14px;
+}
+.wp-easy-email .popover > .arrow,
+.wp-easy-email .popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.wp-easy-email .popover > .arrow {
+  border-width: 11px;
+}
+.wp-easy-email .popover > .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+.wp-easy-email .popover.top > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+}
+.wp-easy-email .popover.top > .arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+.wp-easy-email .popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+.wp-easy-email .popover.right > .arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #fff;
+}
+.wp-easy-email .popover.bottom > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -11px;
+}
+.wp-easy-email .popover.bottom > .arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.wp-easy-email .popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.wp-easy-email .popover.left > .arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -10px;
+}
+.wp-easy-email .carousel {
+  position: relative;
+}
+.wp-easy-email .carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.wp-easy-email .carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.wp-easy-email .carousel-inner > .item > img,
+.wp-easy-email .carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .wp-easy-email .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .wp-easy-email .carousel-inner > .item.next,
+  .wp-easy-email .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .wp-easy-email .carousel-inner > .item.prev,
+  .wp-easy-email .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .wp-easy-email .carousel-inner > .item.next.left,
+  .wp-easy-email .carousel-inner > .item.prev.right,
+  .wp-easy-email .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.wp-easy-email .carousel-inner > .active,
+.wp-easy-email .carousel-inner > .next,
+.wp-easy-email .carousel-inner > .prev {
+  display: block;
+}
+.wp-easy-email .carousel-inner > .active {
+  left: 0;
+}
+.wp-easy-email .carousel-inner > .next,
+.wp-easy-email .carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.wp-easy-email .carousel-inner > .next {
+  left: 100%;
+}
+.wp-easy-email .carousel-inner > .prev {
+  left: -100%;
+}
+.wp-easy-email .carousel-inner > .next.left,
+.wp-easy-email .carousel-inner > .prev.right {
+  left: 0;
+}
+.wp-easy-email .carousel-inner > .active.left {
+  left: -100%;
+}
+.wp-easy-email .carousel-inner > .active.right {
+  left: 100%;
+}
+.wp-easy-email .carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.wp-easy-email .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.wp-easy-email .carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.wp-easy-email .carousel-control:hover,
+.wp-easy-email .carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.wp-easy-email .carousel-control .icon-prev,
+.wp-easy-email .carousel-control .icon-next,
+.wp-easy-email .carousel-control .glyphicon-chevron-left,
+.wp-easy-email .carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+.wp-easy-email .carousel-control .icon-prev,
+.wp-easy-email .carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.wp-easy-email .carousel-control .icon-next,
+.wp-easy-email .carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.wp-easy-email .carousel-control .icon-prev,
+.wp-easy-email .carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.wp-easy-email .carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.wp-easy-email .carousel-control .icon-next:before {
+  content: '\203a';
+}
+.wp-easy-email .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.wp-easy-email .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.wp-easy-email .carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+.wp-easy-email .carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.wp-easy-email .carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .wp-easy-email .carousel-control .glyphicon-chevron-left,
+  .wp-easy-email .carousel-control .glyphicon-chevron-right,
+  .wp-easy-email .carousel-control .icon-prev,
+  .wp-easy-email .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .wp-easy-email .carousel-control .glyphicon-chevron-left,
+  .wp-easy-email .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .wp-easy-email .carousel-control .glyphicon-chevron-right,
+  .wp-easy-email .carousel-control .icon-next {
+    margin-right: -10px;
+  }
+  .wp-easy-email .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .wp-easy-email .carousel-indicators {
+    bottom: 20px;
+  }
+}
+.wp-easy-email .clearfix:before,
+.wp-easy-email .clearfix:after,
+.wp-easy-email .wp-easy-email .dl-horizontal dd:before,
+.wp-easy-email .wp-easy-email .dl-horizontal dd:after,
+.wp-easy-email .wp-easy-email .container:before,
+.wp-easy-email .wp-easy-email .container:after,
+.wp-easy-email .wp-easy-email .container-fluid:before,
+.wp-easy-email .wp-easy-email .container-fluid:after,
+.wp-easy-email .wp-easy-email .row:before,
+.wp-easy-email .wp-easy-email .row:after,
+.wp-easy-email .wp-easy-email .form-horizontal .form-group:before,
+.wp-easy-email .wp-easy-email .form-horizontal .form-group:after,
+.wp-easy-email .wp-easy-email .btn-toolbar:before,
+.wp-easy-email .wp-easy-email .btn-toolbar:after,
+.wp-easy-email .wp-easy-email .btn-group-vertical > .btn-group:before,
+.wp-easy-email .wp-easy-email .btn-group-vertical > .btn-group:after,
+.wp-easy-email .wp-easy-email .nav:before,
+.wp-easy-email .wp-easy-email .nav:after,
+.wp-easy-email .wp-easy-email .navbar:before,
+.wp-easy-email .wp-easy-email .navbar:after,
+.wp-easy-email .wp-easy-email .navbar-header:before,
+.wp-easy-email .wp-easy-email .navbar-header:after,
+.wp-easy-email .wp-easy-email .navbar-collapse:before,
+.wp-easy-email .wp-easy-email .navbar-collapse:after,
+.wp-easy-email .wp-easy-email .pager:before,
+.wp-easy-email .wp-easy-email .pager:after,
+.wp-easy-email .wp-easy-email .panel-body:before,
+.wp-easy-email .wp-easy-email .panel-body:after,
+.wp-easy-email .wp-easy-email .modal-header:before,
+.wp-easy-email .wp-easy-email .modal-header:after,
+.wp-easy-email .wp-easy-email .modal-footer:before,
+.wp-easy-email .wp-easy-email .modal-footer:after {
+  content: " ";
+  display: table;
+}
+.wp-easy-email .clearfix:after,
+.wp-easy-email .wp-easy-email .dl-horizontal dd:after,
+.wp-easy-email .wp-easy-email .container:after,
+.wp-easy-email .wp-easy-email .container-fluid:after,
+.wp-easy-email .wp-easy-email .row:after,
+.wp-easy-email .wp-easy-email .form-horizontal .form-group:after,
+.wp-easy-email .wp-easy-email .btn-toolbar:after,
+.wp-easy-email .wp-easy-email .btn-group-vertical > .btn-group:after,
+.wp-easy-email .wp-easy-email .nav:after,
+.wp-easy-email .wp-easy-email .navbar:after,
+.wp-easy-email .wp-easy-email .navbar-header:after,
+.wp-easy-email .wp-easy-email .navbar-collapse:after,
+.wp-easy-email .wp-easy-email .pager:after,
+.wp-easy-email .wp-easy-email .panel-body:after,
+.wp-easy-email .wp-easy-email .modal-header:after,
+.wp-easy-email .wp-easy-email .modal-footer:after {
+  clear: both;
+}
+.wp-easy-email .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-easy-email .pull-right {
+  float: right !important;
+}
+.wp-easy-email .pull-left {
+  float: left !important;
+}
+.wp-easy-email .hide {
+  display: none !important;
+}
+.wp-easy-email .show {
+  display: block !important;
+}
+.wp-easy-email .invisible {
+  visibility: hidden;
+}
+.wp-easy-email .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.wp-easy-email .hidden {
+  display: none !important;
+}
+.wp-easy-email .affix {
+  position: fixed;
+}
+@-ms-viewport {
+  width: device-width;
+}
+.wp-easy-email .visible-xs,
+.wp-easy-email .visible-sm,
+.wp-easy-email .visible-md,
+.wp-easy-email .visible-lg {
+  display: none !important;
+}
+.wp-easy-email .visible-xs-block,
+.wp-easy-email .visible-xs-inline,
+.wp-easy-email .visible-xs-inline-block,
+.wp-easy-email .visible-sm-block,
+.wp-easy-email .visible-sm-inline,
+.wp-easy-email .visible-sm-inline-block,
+.wp-easy-email .visible-md-block,
+.wp-easy-email .visible-md-inline,
+.wp-easy-email .visible-md-inline-block,
+.wp-easy-email .visible-lg-block,
+.wp-easy-email .visible-lg-inline,
+.wp-easy-email .visible-lg-inline-block {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .wp-easy-email .visible-xs {
+    display: block !important;
+  }
+  table.wp-easy-email .visible-xs {
+    display: table !important;
+  }
+  tr.wp-easy-email .visible-xs {
+    display: table-row !important;
+  }
+  th.wp-easy-email .visible-xs,
+  td.wp-easy-email .visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  .wp-easy-email .visible-xs-block {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .wp-easy-email .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: 767px) {
+  .wp-easy-email .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-easy-email .visible-sm {
+    display: block !important;
+  }
+  table.wp-easy-email .visible-sm {
+    display: table !important;
+  }
+  tr.wp-easy-email .visible-sm {
+    display: table-row !important;
+  }
+  th.wp-easy-email .visible-sm,
+  td.wp-easy-email .visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-easy-email .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-easy-email .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-easy-email .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-easy-email .visible-md {
+    display: block !important;
+  }
+  table.wp-easy-email .visible-md {
+    display: table !important;
+  }
+  tr.wp-easy-email .visible-md {
+    display: table-row !important;
+  }
+  th.wp-easy-email .visible-md,
+  td.wp-easy-email .visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-easy-email .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-easy-email .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-easy-email .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .visible-lg {
+    display: block !important;
+  }
+  table.wp-easy-email .visible-lg {
+    display: table !important;
+  }
+  tr.wp-easy-email .visible-lg {
+    display: table-row !important;
+  }
+  th.wp-easy-email .visible-lg,
+  td.wp-easy-email .visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  .wp-easy-email .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-easy-email .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wp-easy-email .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-easy-email .hidden-lg {
+    display: none !important;
+  }
+}
+.wp-easy-email .visible-print {
+  display: none !important;
+}
+@media print {
+  .wp-easy-email .visible-print {
+    display: block !important;
+  }
+  table.wp-easy-email .visible-print {
+    display: table !important;
+  }
+  tr.wp-easy-email .visible-print {
+    display: table-row !important;
+  }
+  th.wp-easy-email .visible-print,
+  td.wp-easy-email .visible-print {
+    display: table-cell !important;
+  }
+}
+.wp-easy-email .visible-print-block {
+  display: none !important;
+}
+@media print {
+  .wp-easy-email .visible-print-block {
+    display: block !important;
+  }
+}
+.wp-easy-email .visible-print-inline {
+  display: none !important;
+}
+@media print {
+  .wp-easy-email .visible-print-inline {
+    display: inline !important;
+  }
+}
+.wp-easy-email .visible-print-inline-block {
+  display: none !important;
+}
+@media print {
+  .wp-easy-email .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media print {
+  .wp-easy-email .hidden-print {
+    display: none !important;
+  }
+}

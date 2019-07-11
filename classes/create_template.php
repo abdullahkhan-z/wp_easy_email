@@ -99,12 +99,49 @@ class Template_editor {
 
 
 	public function editor_save_template()
-	{
-		$name=$_POST['template_name']?$_POST['template_name']:time();
-		$content=$_POST['content'];
-		$add_template=array("name"=>$name,"content"=>$content);
-		add_user_meta( get_current_user_id(), 'easy_email_templates'.time(), $add_template);
+	{	
+		global $wpdb;
+		$design="";
+		$html="";
+		$template_name="";
+		if(isset($_POST["design"]));
+		$design=$_POST["design"];
+
+		if(isset($_POST['html']))
+		$html=$_POST['html'];
+
+		if(isset($_POST['template_name']))
+		$template_name=$_POST['template_name'];
+
+		$table=$wpdb->prefix."easy_email_templates";
+
+		if(isset($_POST['id']))
+		{
+			
+			$query=$wpdb->prepare("UPDATE $table SET name = %s,design=%s,email_template=%s WHERE id = %d",$template_name,$design,$html,$_POST['id']);
+			if($wpdb->query( $query))
+			{
+				$identifier=$wpdb->get_var("select identifier from $table where id=$id");
+				echo "Template Saved";
+			}
+			else
+			{
+				echo "An Error Occurred While Saving Template. Please Try Again";
+			}
+			wp_die();
+		}
+
+		if($wpdb->insert($table, array(
+				'user_id' => get_current_user_id(),
+				'email_template'=>$html,
+				'design'=>$design,
+				'name'=>$template_name,
+			)))
+		{
 		echo "Template Saved";
+		}
+		else
+		echo "An Error Occurred While Saving Template. Please Try Again";
 		wp_die();
 	}
 

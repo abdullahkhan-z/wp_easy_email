@@ -5,17 +5,20 @@
 		background-color: #2863c4;
 		box-sizing: border-box;
 		color:white;
+		padding:5px;
 	
 	}
 	
 	.respond:hover
 	{ cursor:pointer;
 		background-color:#336ed0;
+		color:white;
 	}
 	.respond:active
 	{
 		cursor:pointer;
 background-color:#2858a7;
+color:white;
 	}
 
 
@@ -26,16 +29,18 @@ background-color:#2858a7;
 		background-color: #26a432;
 		box-sizing: border-box;
 		color:white;
-	
+		padding:5px;
 	}
 	
 	.responsed:hover
 	{ cursor:pointer;
 		background-color:#44ab4e;
+		color:white;
 	}
 	.responsed:active
 	{
 		cursor:pointer;
 background-color:#348a3c;
+color:white;
 	}
 	
