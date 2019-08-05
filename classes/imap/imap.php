@@ -55,7 +55,7 @@ Class EDEN_IMAP
             } 
         else
            $this->imap->connect();
-        //var_dump($this->mailboxes);
+
     }
 
     public function getmailboxes()
@@ -70,6 +70,9 @@ Class EDEN_IMAP
     public function setInboxactive()
     {
         $this->imap->setActiveMailboxExamine($this->inbox_name);
+
+
+
     }
 
     public function getactivebox()
@@ -80,7 +83,7 @@ Class EDEN_IMAP
     public function setmaxuid()
     {
         $this->max_uid=(int)$this->imap->search(array("ALL"),0,1)['uid'];
-        
+     
     }
 
     public function getEmails($number)
@@ -198,7 +201,19 @@ Class EDEN_IMAP
     }
 }
     
+// $eden=new EDEN_IMAP("imap","imap.gmail.com","abdullah.zafar8881@gmail.com","chr0n0assult",993,true,false,"\\","\\");
 
+
+// $eden->connect();
+// $eden->getmailboxes();
+// $eden->setInboxactive();
+// $eden->setmaxuid();
+// $max_uid=$eden->getmaxuid();
+
+// var_dump($max_uid);
+// $emails = $eden->imap->getEmails($max_uid-1, $max_uid); 
+// $structure=$eden->bodypeek(max_uid);
+// var_dump($structure)
 
 
 ?>
